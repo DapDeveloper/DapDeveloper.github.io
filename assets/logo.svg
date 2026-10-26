@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Daniel Petrea logo">
+  <defs>
+    <linearGradient id="logo-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e2a20"/>
+      <stop offset="0.55" stop-color="#24563d"/>
+      <stop offset="1" stop-color="#3d7f5c"/>
+    </linearGradient>
+    <linearGradient id="logo-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9eccd"/>
+      <stop offset="1" stop-color="#4c9c71"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="128" cy="128" r="124" fill="url(#logo-bg)"/>
+  <circle cx="128" cy="128" r="112" fill="none" stroke="url(#logo-ring)" stroke-opacity="0.4" stroke-width="2"/>
+
+  <path d="M128 44 L200.7 86 L200.7 170 L128 212 L55.3 170 L55.3 86 Z" fill="#0b1f17" fill-opacity="0.25"/>
+  <path d="M128 44 L200.7 86 L200.7 170 L128 212 L55.3 170 L55.3 86 Z" fill="none" stroke="#bfe8d1" stroke-opacity="0.8" stroke-width="4" stroke-linejoin="round"/>
+  <g fill="none" stroke="#bfe8d1" stroke-opacity="0.7" stroke-width="3" stroke-linecap="round">
+    <path d="M30 128 H50"/>
+    <path d="M206 128 H226"/>
+  </g>
+  <g fill="#bfe8d1" fill-opacity="0.9">
+    <circle cx="30" cy="128" r="4"/>
+    <circle cx="226" cy="128" r="4"/>
+    <circle cx="128" cy="44" r="4"/>
+    <circle cx="128" cy="212" r="4"/>
+  </g>
+
+  <text x="128" y="161" text-anchor="middle" font-family="'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-4" fill="#f4fbf6">DP</text>
+</svg>

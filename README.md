@@ -11,8 +11,8 @@ personal-site/
 ├── css/style.css       Styling
 ├── js/main.js          Theme toggle, mobile nav, footer year
 ├── assets/
-│   ├── avatar.svg      Replace with your photo (avatar.jpg/png)
-│   ├── favicon.svg     Browser tab icon
+│   ├── logo.svg        Personal logo and browser tab icon
+│   ├── avatar.svg      Optional portrait (not used on the page)
 │   └── apps/           App icons
 ├── apk/                APK files served by the site
 ├── .nojekyll           Tells GitHub Pages not to run Jekyll
