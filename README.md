@@ -6,13 +6,15 @@ Static site for a biography and direct APK downloads.
 
 ```
 personal-site/
-├── index.html          Page content (name, bio, apps, contact)
+├── index.html          Home: bio, featured app, contact
+├── apps.html           Android apps page with download details
 ├── css/style.css       Styling
 ├── js/main.js          Theme toggle, mobile nav, footer year
 ├── assets/
 │   ├── avatar.svg      Replace with your photo (avatar.jpg/png)
-│   └── favicon.svg     Browser tab icon
-├── apk/                Put your .apk files here
+│   ├── favicon.svg     Browser tab icon
+│   └── apps/           App icons
+├── apk/                APK files served by the site
 ├── .nojekyll           Tells GitHub Pages not to run Jekyll
 └── README.md
 ```
@@ -29,11 +31,14 @@ Open `index.html` and replace:
 
 ## 2. Add your APKs
 
-Copy each APK into `apk/` and make the card link match:
+Copy each APK into `apk/` and make the download link match:
 
 ```html
-<a class="btn btn-primary btn-sm" href="apk/my-app.apk" download>Download APK</a>
+<a class="btn btn-primary" href="apk/my-app.apk" download>Download APK</a>
 ```
+
+Then add or update the app card in `apps.html` (and the featured card in
+`index.html`). Keep files under 100 MB, the GitHub per-file limit.
 
 ## 3. Add your avatar (optional)
 

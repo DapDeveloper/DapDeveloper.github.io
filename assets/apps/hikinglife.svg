@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="HikingLife app icon">
+  <defs>
+    <linearGradient id="hiking-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A237E"/>
+      <stop offset="0.5" stop-color="#283593"/>
+      <stop offset="1" stop-color="#42A5F5"/>
+    </linearGradient>
+    <clipPath id="hiking-clip">
+      <rect width="108" height="108" rx="24" ry="24"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#hiking-clip)">
+    <rect width="108" height="108" fill="url(#hiking-sky)"/>
+    <circle cx="72" cy="28" r="10" fill="#FFD54F"/>
+    <path d="M10 78 L30 42 L42 58 L54 38 L70 62 L82 48 L98 78 Z" fill="#90A4AE"/>
+    <path d="M30 42 L26 50 L30 47 L34 52 L38 48 Z" fill="#ECEFF1"/>
+    <path d="M54 38 L50 46 L54 43 L58 48 L62 44 Z" fill="#ECEFF1"/>
+    <path d="M0 88 L22 60 L36 74 L50 56 L68 78 L84 64 L108 88 Z" fill="#2E7D32"/>
+    <path d="M0 96 L18 74 L32 86 L48 70 L66 88 L82 76 L108 96 L108 108 L0 108 Z" fill="#1B5E20"/>
+    <g transform="translate(48 52) scale(0.9)">
+      <path d="M4 2 L7 2 L8 10 L3 10 Z" fill="#263238"/>
+      <circle cx="5.5" cy="0" r="2" fill="#263238"/>
+      <path d="M7 10 L9 16 L7.5 16 L6 10 Z" fill="#263238"/>
+      <path d="M4 10 L2 16 L3.5 16 L5 10 Z" fill="#263238"/>
+      <path d="M7 4 L11 7 L10.3 7.8 L6.3 4.8 Z" fill="#263238"/>
+      <path d="M11 5 L12 16" stroke="#263238" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

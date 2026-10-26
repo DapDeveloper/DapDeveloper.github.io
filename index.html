@@ -13,13 +13,13 @@
 
   <header class="site-header">
     <nav class="nav container" aria-label="Main">
-      <a class="brand" href="#top">Your Name</a>
+      <a class="brand" href="index.html">Your Name</a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#about">About</a></li>
-        <li><a href="#apps">Apps</a></li>
+        <li><a href="apps.html">Apps</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
           <button class="theme-toggle" aria-label="Toggle color theme">
@@ -41,7 +41,7 @@
           and publish my apps for direct download.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#apps">Browse apps</a>
+          <a class="btn btn-primary" href="apps.html">Browse apps</a>
           <a class="btn btn-ghost" href="#about">About me</a>
         </div>
       </div>
@@ -79,34 +79,21 @@
     <section class="section container" id="apps">
       <div class="section-head">
         <h2 class="section-title">Apps</h2>
-        <p class="section-sub">Download my Android apps as APK files.</p>
+        <p class="section-sub">Download my Android apps directly as APK files.</p>
       </div>
 
-      <div class="card-grid" id="app-grid">
-        <article class="app-card">
-          <div class="app-icon" aria-hidden="true">A</div>
-          <h3>App One</h3>
-          <p>One-line description of what the app does and who it's for.</p>
-          <p class="meta">Version 1.0.0 · Android 8+</p>
-          <a class="btn btn-primary btn-sm" href="apk/app-one.apk" download>Download APK</a>
-        </article>
-
-        <article class="app-card">
-          <div class="app-icon" aria-hidden="true">B</div>
-          <h3>App Two</h3>
-          <p>One-line description of what the app does and who it's for.</p>
-          <p class="meta">Version 1.0.0 · Android 8+</p>
-          <a class="btn btn-primary btn-sm" href="apk/app-two.apk" download>Download APK</a>
-        </article>
-
-        <article class="app-card">
-          <div class="app-icon" aria-hidden="true">C</div>
-          <h3>App Three</h3>
-          <p>One-line description of what the app does and who it's for.</p>
-          <p class="meta">Version 1.0.0 · Android 8+</p>
-          <a class="btn btn-primary btn-sm" href="apk/app-three.apk" download>Download APK</a>
-        </article>
-      </div>
+      <article class="app-card app-card-horizontal">
+        <img class="app-icon-img" src="assets/apps/hikinglife.svg" alt="HikingLife icon" width="72" height="72">
+        <div class="app-card-body">
+          <h3>HikingLife</h3>
+          <p>A GPS navigator for hiking with offline OpenStreetMap maps, GPX support and live track recording.</p>
+          <p class="meta">Version 1.2.0 · Android 8.0+ · 63 MB</p>
+        </div>
+        <div class="app-card-actions">
+          <a class="btn btn-primary" href="apk/HikingLife-debug.apk" download>Download APK</a>
+          <a class="btn btn-ghost" href="apps.html">Details</a>
+        </div>
+      </article>
 
       <p class="note">
         To install, allow installation from unknown sources in Android settings,
