@@ -27,10 +27,11 @@ personal-site/
 ├── index.html          Home: bio, featured app, contact
 ├── apps.html           Android apps page with download details
 ├── css/style.css       Styling
-├── js/main.js          Theme toggle, mobile nav, footer year
+├── js/main.js          Theme, language toggle, translations, mobile nav
 ├── assets/
 │   ├── logo.svg        Personal logo and browser tab icon
 │   ├── logo.png        1024px logo for GitHub/social use
+│   ├── hikinglife-qr.* QR code for the HikingLife APK download
 │   ├── avatar.svg      Optional portrait (not used on the page)
 │   └── apps/           App icons
 ├── apk/                APK files served by the site
@@ -43,11 +44,14 @@ personal-site/
 The biography lives in `index.html`:
 
 - Hero intro and the **Biography** paragraphs
-- Quick facts sidebar (location, focus, embedded, contact)
+- Quick facts sidebar (location, focus, embedded, LinkedIn)
 - **Skills** groups
-- **Contact** links (phone, LinkedIn, GitHub, location)
+- **Contact** links (LinkedIn, GitHub, location)
 
-Keep `apps.html` in sync when app versions or files change.
+Translations live in `js/main.js` (`en` and `it` dictionaries). Every
+`data-i18n` key in the HTML must exist in both languages.
+
+Keep `apps.html` in sync when app versions, QR codes, or files change.
 
 ## 2. Add your APKs
 
