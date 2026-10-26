@@ -383,6 +383,27 @@ h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
   font-weight: 600;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.skill-group {
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.skill-group h3 {
+  margin: 0 0 14px;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+}
+.skill-group .tag-list { margin: 0; }
+
 .app-details {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
