@@ -1,0 +1,76 @@
+# Personal Site — GitHub Pages
+
+Static site for a biography and direct APK downloads.
+
+## Structure
+
+```
+personal-site/
+├── index.html          Page content (name, bio, apps, contact)
+├── css/style.css       Styling
+├── js/main.js          Theme toggle, mobile nav, footer year
+├── assets/
+│   ├── avatar.svg      Replace with your photo (avatar.jpg/png)
+│   └── favicon.svg     Browser tab icon
+├── apk/                Put your .apk files here
+├── .nojekyll           Tells GitHub Pages not to run Jekyll
+└── README.md
+```
+
+## 1. Edit the content
+
+Open `index.html` and replace:
+
+- `Your Name` (appears in the title, nav, hero, footer)
+- The About paragraphs and Quick facts
+- `you@example.com` with your email
+- `YOUR_USERNAME` in the GitHub and X links
+- App cards: title, description, version, and APK filename
+
+## 2. Add your APKs
+
+Copy each APK into `apk/` and make the card link match:
+
+```html
+<a class="btn btn-primary btn-sm" href="apk/my-app.apk" download>Download APK</a>
+```
+
+## 3. Add your avatar (optional)
+
+Replace the image reference in `index.html`:
+
+```html
+<img src="assets/avatar.jpg" alt="Portrait of Your Name" width="240" height="240">
+```
+
+## 4. Publish on GitHub Pages
+
+Create a repository named `YOUR_USERNAME.github.io` (replace with your username),
+then from this folder:
+
+```bash
+git init
+git add .
+git commit -m "Initial site"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io.git
+git push -u origin main
+```
+
+GitHub Pages is enabled automatically for `YOUR_USERNAME.github.io`
+repositories. The site will be live at:
+
+```
+https://YOUR_USERNAME.github.io/
+```
+
+If you use a different repository name (for example `my-site`), go to
+**Settings → Pages**, set **Source** to `Deploy from a branch`, choose
+`main` / `/ (root)`, and save. The site will be at
+`https://YOUR_USERNAME.github.io/my-site/`.
+
+## Notes
+
+- GitHub Pages is free for public repositories.
+- Assets over 100 MB per file are rejected; keep APK sizes reasonable.
+- It can take a minute or two after pushing for changes to appear.
