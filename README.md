@@ -1,6 +1,24 @@
-# Personal Site — GitHub Pages
+<p align="center">
+  <img src="assets/logo.png" alt="Daniel Petrea logo" width="120" height="120">
+</p>
 
-Static site for a biography and direct APK downloads.
+<h1 align="center">Daniel Petrea</h1>
+<p align="center">
+  <strong>Software &amp; Firmware Developer</strong><br>
+  Android · Embedded · Electronics · 3D Printing
+</p>
+<p align="center">
+  <a href="https://dapdeveloper.github.io/">Website</a> ·
+  <a href="https://www.linkedin.com/in/daniel-petrea-857741133">LinkedIn</a> ·
+  <a href="https://github.com/DapDeveloper">GitHub</a>
+</p>
+
+---
+
+## Personal site
+
+Static site for a biography and direct APK downloads, published at
+<https://dapdeveloper.github.io/>.
 
 ## Structure
 
@@ -12,6 +30,7 @@ personal-site/
 ├── js/main.js          Theme toggle, mobile nav, footer year
 ├── assets/
 │   ├── logo.svg        Personal logo and browser tab icon
+│   ├── logo.png        1024px logo for GitHub/social use
 │   ├── avatar.svg      Optional portrait (not used on the page)
 │   └── apps/           App icons
 ├── apk/                APK files served by the site
