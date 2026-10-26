@@ -59,55 +59,54 @@
         </div>
 
         <p class="app-description" data-i18n="hiking.description">
-          A hiking companion built on free OpenStreetMap maps. Follow trails
-          with live GPS, save and load GPX routes, record your track, and
-          download map areas for use without a network connection.
+          A hiking map built on free OpenStreetMap maps. Center on your GPS
+          position, pan and zoom, and download map areas for use without a
+          network connection. GPX routes and track recording are in development.
         </p>
 
         <ul class="tag-list">
           <li data-i18n="tag.offline">Offline maps</li>
           <li>OpenStreetMap</li>
-          <li data-i18n="tag.gpx">GPX files</li>
-          <li data-i18n="tag.gps">GPS tracking</li>
+          <li data-i18n="tag.position">Live GPS position</li>
+          <li data-i18n="tag.download">Offline area download</li>
           <li>Kotlin</li>
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.2.0</dd></div>
-          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">22 Oct 2026</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.2.1</dd></div>
+          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">26 Oct 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>63 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
-          <div><dt data-i18n="detail.build">Build</dt><dd data-i18n="detail.build.value">Debug APK</dd></div>
-          <div><dt data-i18n="detail.file">File</dt><dd><code>app-debug.apk</code></dd></div>
+          <div><dt data-i18n="detail.build">Build</dt><dd data-i18n="detail.build.value">Signed release APK</dd></div>
+          <div><dt data-i18n="detail.file">File</dt><dd><code>HikingLife.apk</code></dd></div>
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife-debug.apk" download data-i18n="hiking.download">Download HikingLife 1.2.0</a>
-          <span class="app-file">HikingLife-debug.apk · 63 MB</span>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.2.1.apk" data-i18n="hiking.download">Download HikingLife 1.2.1</a>
+          <span class="app-file">HikingLife.apk · signed release · 63 MB</span>
         </div>
 
         <div class="qr-card">
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.2.0 (63 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.2.1 (63 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
-          <summary data-i18n="release.summary">What's new in 1.2.0</summary>
+          <summary data-i18n="release.summary">What's new in 1.2.1</summary>
           <ul>
-            <li data-i18n="release.1">Download menu for offline maps: all of Italy at zoom 8–12, or the visible area at zoom 13–16.</li>
-            <li data-i18n="release.2">Tile count and estimated size are shown before a download starts.</li>
-            <li data-i18n="release.3">Live progress bar with cancel/close control.</li>
-            <li data-i18n="release.4">Two download threads, respecting the OpenTopoMap usage policy.</li>
-            <li data-i18n="release.5">Wake lock during long downloads; tiles are stored in the app cache for offline use.</li>
-            <li data-i18n="release.6">Install this APK over the previous version.</li>
+            <li data-i18n="release.1">Dedicated release signing key: Android can verify this and future updates from the same developer.</li>
+            <li data-i18n="release.2">Same map and offline download features as 1.2.0.</li>
+            <li data-i18n="release.3">Uninstall the old debug build (1.2.0) once before installing this version.</li>
+            <li data-i18n="release.4">Future signed updates can be installed over this release.</li>
+            <li data-i18n="release.5">GPX import/export and track recording are still in development.</li>
           </ul>
         </details>
 
         <p class="checksum">
-          SHA-256: <code>5deb814380bdda5da96ff6c86e37c2e64f8b16c819a41169fe48082c33f11169</code>
+          SHA-256: <code>0a68d154de843de45c1d621a9a18c421dacd9fbfda4f2c4edeb25a2fca8337a2</code>
         </p>
       </article>
 
@@ -117,13 +116,98 @@
           <li data-i18n="install.1">Download the APK on your Android device.</li>
           <li data-i18n="install.2">When prompted, allow your browser to install unknown apps.</li>
           <li data-i18n="install.3">Open the downloaded file and confirm the install.</li>
-          <li data-i18n="install.4">If you already have an older version, install over it to keep your data.</li>
+          <li data-i18n="install.4">If you have the old debug build (1.2.0), uninstall it once. Then install this signed release; future updates can be installed over it.</li>
         </ol>
-        <p class="note" data-i18n="install.note">
-          HikingLife is distributed as a debug build outside Google Play.
-          Only install APKs you trust, and verify the SHA-256 checksum above
-          if you want to confirm the file is unchanged.
+        <p class="note">
+          <span data-i18n="install.note">HikingLife is distributed outside Google Play as a signed release. Only install APKs you trust, and verify the SHA-256 checksum above if you want to confirm the file is unchanged.</span>
+          <a href="privacy.html" data-i18n="install.privacy">Read the privacy policy</a>.
         </p>
+      </div>
+    </section>
+
+    <section class="section container" id="faq">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="faq.title">Questions</h2>
+        <p class="section-sub" data-i18n="faq.sub">What to know before installing.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary data-i18n="faq.q1">Is HikingLife free?</summary>
+          <p data-i18n="faq.a1">Yes. It is a personal project distributed directly, with no account, ads, or in-app purchases.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q2">Does it work offline?</summary>
+          <p data-i18n="faq.a2">The app includes an offline Italy map for zoom 8–10. You can download all of Italy at zoom 8–12 or the visible area at zoom 13–16 before leaving. Higher zoom levels load online and are cached when a connection is available.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q3">Does it track or share my location?</summary>
+          <p data-i18n="faq.a3">No. Location is used only on your device to center the map when you tap the GPS button. HikingLife has no account, analytics, ads, or developer-operated server, and it does not send your position to us. Map tile requests go to OpenTopoMap, which receives standard network information such as your IP address.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q4">Which Android versions are supported?</summary>
+          <p data-i18n="faq.a4">Android 8.0 (API 26) or newer.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q5">Why is there an "unknown apps" warning?</summary>
+          <p data-i18n="faq.a5">HikingLife is installed from a browser, not Google Play, so Android asks you to allow installs from that browser. The permission applies only to the app you use to open the APK.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q6">How do I update?</summary>
+          <p data-i18n="faq.a6">Install the new APK over the current one. The first signed release (1.2.1) is the exception: if you have the old debug build (1.2.0), uninstall it once because the signing key changed.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q7">Are GPX and track recording available?</summary>
+          <p data-i18n="faq.a7">Not yet. They are in development; the current release focuses on the map, GPS position, and offline areas.</p>
+        </details>
+        <details class="faq-item">
+          <summary data-i18n="faq.q8">How do I report a bug?</summary>
+          <p data-i18n="faq.a8" data-i18n-html>Contact me on <a href="https://github.com/DapDeveloper">GitHub</a> or <a href="https://www.linkedin.com/in/daniel-petrea-857741133" rel="noopener">LinkedIn</a> with your Android version, device model, and steps to reproduce. Include a screenshot if possible.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section container" id="changelog">
+      <div class="section-head">
+        <h2 class="section-title" data-i18n="changelog.title">Changelog</h2>
+        <p class="section-sub" data-i18n="changelog.sub">Release history, newest first.</p>
+      </div>
+      <div class="changelog">
+        <details class="changelog-item" open>
+          <summary><strong>1.2.1</strong> · <span data-i18n="changelog.121.title">First signed release</span> <time datetime="2026-10-26">2026-10-26</time></summary>
+          <ul>
+            <li data-i18n="changelog.121.1">Dedicated release signing key; future updates can be installed over this build.</li>
+            <li data-i18n="changelog.121.2">Same map and offline download features as 1.2.0.</li>
+            <li data-i18n="changelog.121.3">The old debug build must be uninstalled once.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
+          <summary><strong>1.2.0</strong> · <span data-i18n="changelog.120.title">Offline map downloads</span> <time datetime="2026-10-22">2026-10-22</time></summary>
+          <ul>
+            <li data-i18n="changelog.120.1">Download all of Italy (zoom 8–12) or the visible area (zoom 13–16).</li>
+            <li data-i18n="changelog.120.2">Size estimate, progress bar, cancel control, and two download threads.</li>
+            <li data-i18n="changelog.120.3">Wake lock during long downloads; tiles are cached for offline use.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
+          <summary><strong>1.1.1</strong> · <span data-i18n="changelog.111.title">Detail zoom fix</span> <time datetime="2026-10-22">2026-10-22</time></summary>
+          <ul>
+            <li data-i18n="changelog.111.1">Online tiles continue beyond zoom 10; maximum zoom is 18.</li>
+            <li data-i18n="changelog.111.2">Italy zoom 8–10 remains offline; higher zooms are cached.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
+          <summary><strong>1.1.0</strong> · <span data-i18n="changelog.110.title">App icon</span> <time datetime="2026-10-22">2026-10-22</time></summary>
+          <ul>
+            <li data-i18n="changelog.110.1">New adaptive icon with a mountain landscape and hiker silhouette.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
+          <summary><strong>1.0.0</strong> · <span data-i18n="changelog.100.title">First release</span> <time datetime="2026-10-22">2026-10-22</time></summary>
+          <ul>
+            <li data-i18n="changelog.100.1">OpenTopoMap with an offline Italy pack (zoom 8–10).</li>
+            <li data-i18n="changelog.100.2">Pan, zoom, rotate, and center on GPS.</li>
+          </ul>
+        </details>
       </div>
 
       <p class="more-apps" data-i18n="apps.more" data-i18n-html>
@@ -136,7 +220,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; <span id="year"></span> Daniel Petrea. <span data-i18n="footer.rights">All rights reserved.</span></p>
-      <a href="index.html" data-i18n="nav.home">Home</a>
+      <div class="footer-links">
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+      </div>
     </div>
   </footer>
 

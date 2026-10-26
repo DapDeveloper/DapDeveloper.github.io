@@ -25,13 +25,14 @@ Static site for a biography and direct APK downloads, published at
 ```
 personal-site/
 ├── index.html          Home: bio, featured app, contact
-├── apps.html           Android apps page with download details
+├── apps.html           Android apps page: downloads, FAQ, changelog
+├── privacy.html        Bilingual privacy policy
 ├── css/style.css       Styling
 ├── js/main.js          Theme, language toggle, translations, mobile nav
 ├── assets/
 │   ├── logo.svg        Personal logo and browser tab icon
 │   ├── logo.png        1024px logo for GitHub/social use
-│   ├── hikinglife-qr.* QR code for the HikingLife APK download
+│   ├── hikinglife-qr.* QR code for the stable HikingLife APK URL
 │   ├── avatar.svg      Optional portrait (not used on the page)
 │   └── apps/           App icons
 ├── apk/                APK files served by the site
@@ -61,8 +62,19 @@ Copy each APK into `apk/` and make the download link match:
 <a class="btn btn-primary" href="apk/my-app.apk" download>Download APK</a>
 ```
 
+HikingLife uses the stable path `apk/HikingLife.apk`, so the QR code keeps
+working across releases. The versioned release asset lives in the private
+`DapDeveloper/HikingLife` GitHub release and is copied here for public
+download.
+
 Then add or update the app card in `apps.html` (and the featured card in
-`index.html`). Keep files under 100 MB, the GitHub per-file limit.
+`index.html`), plus the version, release date, size, and SHA-256 checksum.
+Keep files under 100 MB, the GitHub per-file limit.
+
+HikingLife releases are built and signed by GitHub Actions in the
+`HikingLife` repository. Never commit the signing keystore or passwords to
+either repository; they are stored only in GitHub Actions secrets. Users
+moving from the old debug-signed build (1.2.0) must uninstall it once.
 
 ## 3. Add your avatar (optional)
 
@@ -103,3 +115,5 @@ If you use a different repository name (for example `my-site`), go to
 - GitHub Pages is free for public repositories.
 - Assets over 100 MB per file are rejected; keep APK sizes reasonable.
 - It can take a minute or two after pushing for changes to appear.
+- The site has no analytics or advertising cookies; only the theme and
+  language preference are stored in browser local storage.
