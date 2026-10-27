@@ -76,7 +76,7 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.4.0</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.5.0</dd></div>
           <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">27 Oct 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>63 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
@@ -85,7 +85,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.4.0.apk" data-i18n="hiking.download">Download HikingLife 1.4.0</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.5.0.apk" data-i18n="hiking.download">Download HikingLife 1.5.0</a>
           <span class="app-file">HikingLife.apk · signed release · 63 MB</span>
         </div>
 
@@ -93,25 +93,25 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.4.0 (63 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.5.0 (63 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
-          <summary data-i18n="release.summary">What's new in 1.4.0</summary>
+          <!-- release:start -->
+          <summary data-i18n="release.summary">What's new in 1.5.0</summary>
           <ul>
-            <li data-i18n="release.1">Three map styles, remembered across launches: Relief with contours and hillshading, Streets, and a light Fast style with marked trails.</li>
-            <li data-i18n="release.2">Record tracks with live distance, moving time, speed, steps, elevation gain and a live elevation profile; pause, resume, and keep recording with the screen off.</li>
-            <li data-i18n="release.3">Saved recordings list date, distance, duration, steps and elevation; select one to draw its track on the map.</li>
-            <li data-i18n="release.4">Measure the direct and trail distance between two points, with estimated times and a toggle for the drawn line.</li>
-            <li data-i18n="release.5">Long-press a point to navigate there straight or following trails, with remaining distance and time updated from GPS until arrival.</li>
-            <li data-i18n="release.6">Download offline maps for a country, a city, a searched place or the current view, with size estimates and a cap for oversized downloads.</li>
-            <li data-i18n="release.7">Trail routes and trail distances need a data connection (FOSSGIS/OSRM); measuring and navigating in a straight line work offline.</li>
+            <li data-i18n="release.1">The top quarter of the screen is a fixed status panel (40% in landscape) with distance, time, current and average speed, steps and elevation gain; Record, Pause and Stop sit in its header.</li>
+            <li data-i18n="release.2">The map menu is now a side drawer, opened with an arrow on the map and closed with its own arrow, the back gesture or a tap outside.</li>
+            <li data-i18n="release.3">Track recording shows the live current speed next to the average speed, both in the panel and in the ongoing notification.</li>
+            <li data-i18n="release.4">Offline downloads now cover all three map styles in a single run, and every style is cached under its own key so a downloaded area renders with any style you pick later.</li>
+            <li data-i18n="release.5">On landscape screens the menu arrow, measure, download and locate buttons no longer overlap.</li>
           </ul>
+          <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">c67bf411978530b656fddc657db8cb63140b61e3dc4657272fac706414597022</code>
+          SHA-256: <code id="apk-sha256">60ed2c6b5adf85b5be92e84215eac524fab59263ea4c48b2e517d651494b6eab</code>
         </p>
       </article>
 
@@ -240,7 +240,17 @@
         <p class="section-sub" data-i18n="changelog.sub">Release history, newest first.</p>
       </div>
       <div class="changelog">
+        <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.5.0</strong> · <span data-i18n="changelog.150.title">Split screen, live speed and offline maps for every style</span> <time datetime="2026-10-27">2026-10-27</time></summary>
+          <ul>
+            <li data-i18n="changelog.150.1">A fixed status panel on top always shows the track stats, and the map takes the rest of the screen.</li>
+            <li data-i18n="changelog.150.2">The map menu moved into a side drawer opened with an arrow.</li>
+            <li data-i18n="changelog.150.3">Track recording shows the live current speed next to the average speed.</li>
+            <li data-i18n="changelog.150.4">Offline downloads now cover all three map styles in a single run.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.4.0</strong> · <span data-i18n="changelog.140.title">Map styles, measuring and navigation</span> <time datetime="2026-10-27">2026-10-27</time></summary>
           <ul>
             <li data-i18n="changelog.140.1">Relief, Streets and Fast map styles, remembered across launches.</li>
@@ -293,6 +303,7 @@
             <li data-i18n="changelog.100.2">Pan, zoom, rotate, and center on GPS.</li>
           </ul>
         </details>
+        <!-- changelog:end -->
       </div>
 
       <p class="more-apps" data-i18n="apps.more" data-i18n-html>
