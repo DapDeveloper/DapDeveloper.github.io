@@ -76,42 +76,41 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.6.0</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.7.0</dd></div>
           <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">27 Oct 2026</dd></div>
-          <div><dt data-i18n="detail.size">Size</dt><dd>63 MB</dd></div>
+          <div><dt data-i18n="detail.size">Size</dt><dd>64 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
           <div><dt data-i18n="detail.build">Build</dt><dd data-i18n="detail.build.value">Signed release APK</dd></div>
           <div><dt data-i18n="detail.file">File</dt><dd><code>HikingLife.apk</code></dd></div>
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.6.0.apk" data-i18n="hiking.download">Download HikingLife 1.6.0</a>
-          <span class="app-file">HikingLife.apk · signed release · 63 MB</span>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.7.0.apk" data-i18n="hiking.download">Download HikingLife 1.7.0</a>
+          <span class="app-file">HikingLife.apk · signed release · 64 MB</span>
         </div>
 
         <div class="qr-card">
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.6.0 (63 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.7.0 (64 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
           <!-- release:start -->
-          <summary data-i18n="release.summary">What's new in 1.6.0</summary>
+          <summary data-i18n="release.summary">What's new in 1.7.0</summary>
           <ul>
-            <li data-i18n="release.1">Every recording has two clocks: the total time runs from the moment you start recording until you stop it, and the moving time only counts while you are really walking. A pause or a coffee break still shows on the total time, while the moving time stands still as soon as the phone lies still. Both times are saved with the track and shown in the list of saved recordings.</li>
-            <li data-i18n="release.2">The accelerometer and the gyroscope now tell the app whether the device is moving before anything is counted. A resting phone no longer adds its GPS drift to the distance, keeps the live speed at zero and does not count phantom steps, so the numbers match what you actually walked.</li>
-            <li data-i18n="release.3">The status panel shows the current altitude above sea level, next to the total elevation gain. The value follows the latest GPS fix, so it keeps updating even while you stand still, and stays empty when the GPS reports no altitude.</li>
-            <li data-i18n="release.4">Stopping a recording asks for a name or a note before the track is saved. The field comes prefilled with the date and time, so a hike can be saved without typing anything; cancelling the dialog keeps the recording running. The name is shown in the saved-recordings list, and the track file is renamed to that name plus the start date, so recordings stay recognisable even outside the app.</li>
-            <li data-i18n="release.5">Rotating the phone no longer resets the map. The place the map was showing, the zoom level and the map rotation are kept when the screen turns, instead of jumping back to the default starting view.</li>
+            <li data-i18n="release.1">The altitude is corrected with the EGM96 geoid model. Android reports the height above the WGS-84 reference ellipsoid, while the maps and the other navigation apps show the height above mean sea level; the two differ by the geoid undulation, which is about 50 m in Europe. A spot that reads 206 m in another app now reads 206 m here too.</li>
+            <li data-i18n="release.2">The correction applies to the recorded tracks as well, so the elevation profile of a new hike shows the real heights above sea level.</li>
+            <li data-i18n="release.3">The altitude in the status panel is smoothed, so it no longer jumps around by a few meters with the GPS noise.</li>
+            <li data-i18n="release.4">Tracks recorded before this version keep the old, ellipsoidal altitude: their profile sits about 50 m above the real height above sea level.</li>
           </ul>
           <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">04e7aef021ff1a94b53e73e7279ad44fd3084306e47b493becce4ed75c8214af</code>
+          SHA-256: <code id="apk-sha256">c32bfde12598d87188996dbaa912a4925dc02e0feab9bdae46d731a7c88f346b</code>
         </p>
       </article>
 
@@ -243,6 +242,15 @@
       <div class="changelog">
         <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.7.0</strong> · <span data-i18n="changelog.170.title">An altitude that matches the other apps</span> <time datetime="2026-10-27">27 Oct 2026</time></summary>
+          <ul>
+            <li data-i18n="changelog.170.1">The altitude is corrected with the EGM96 geoid model. Android reports the height above the WGS-84 reference ellipsoid, while the maps and the other navigation apps show the height above mean sea level; the two differ by the geoid undulation, which is about 50 m in Europe. A spot that reads 206 m in another app now reads 206 m here too.</li>
+            <li data-i18n="changelog.170.2">The correction applies to the recorded tracks as well, so the elevation profile of a new hike shows the real heights above sea level.</li>
+            <li data-i18n="changelog.170.3">The altitude in the status panel is smoothed, so it no longer jumps around by a few meters with the GPS noise.</li>
+            <li data-i18n="changelog.170.4">Tracks recorded before this version keep the old, ellipsoidal altitude: their profile sits about 50 m above the real height above sea level.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.6.0</strong> · <span data-i18n="changelog.160.title">Two clocks, real motion detection and a map that keeps your view</span> <time datetime="2026-10-27">27 Oct 2026</time></summary>
           <ul>
             <li data-i18n="changelog.160.1">Every recording has two clocks: the total time runs from the moment you start recording until you stop it, and the moving time only counts while you are really walking. A pause or a coffee break still shows on the total time, while the moving time stands still as soon as the phone lies still. Both times are saved with the track and shown in the list of saved recordings.</li>
