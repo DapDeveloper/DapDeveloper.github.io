@@ -6,11 +6,11 @@ APK files in this folder are served directly by GitHub Pages.
 
 <<<<<<< HEAD
 - `HikingLife.apk` — HikingLife v1.5.0, signed release (Android 8.0+, ~63 MB)
-  - SHA-256: `38e9682279fe689849e9cb61131744d8a085c0c47919b322861d5f456d9c8d4f`
+  - SHA-256: `86efd4e1c77ce0615e9a15c85dac30ddae6c149d27668f98b86c422dfc2cec41`
   - Source asset: HikingLife release `v1.5.0` / `HikingLife-1.5.0.apk`
 =======
 - `HikingLife.apk` — HikingLife v1.6.0, signed release (Android 8.0+, ~63 MB)
-  - SHA-256: `04e7aef021ff1a94b53e73e7279ad44fd3084306e47b493becce4ed75c8214af`
+  - SHA-256: `86efd4e1c77ce0615e9a15c85dac30ddae6c149d27668f98b86c422dfc2cec41`
   - Source asset: HikingLife release `v1.6.0` / `HikingLife-1.6.0.apk`
 >>>>>>> be4f82f10d30d75e0373ae9aee0f9303c901f19f
   - Signing certificate: `CN=HikingLife Release, O=DapDeveloper, C=IT`
@@ -21,8 +21,8 @@ APK files in this folder are served directly by GitHub Pages.
 The previous `HikingLife-debug.apk` (v1.2.0) was removed. Users upgrading
 from it must uninstall once because the signing key changed.
 
-- `PerfectPizza.apk` — PerfectPizza v1.0.3, signed release (Android 8.0+, ~5.0 MB)
-  - SHA-256: `38e9682279fe689849e9cb61131744d8a085c0c47919b322861d5f456d9c8d4f`
+- `PerfectPizza.apk` — PerfectPizza v1.0.4, signed release (Android 8.0+, ~5.0 MB)
+  - SHA-256: `86efd4e1c77ce0615e9a15c85dac30ddae6c149d27668f98b86c422dfc2cec41`
   - Source: `DapDeveloper/PerfectPizza`, `app-release.apk` from
     `gradlew assembleRelease`
   - Signed with the project release key (RSA 4096, v2/v3 schemes), so future
