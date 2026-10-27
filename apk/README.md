@@ -5,9 +5,9 @@ APK files in this folder are served directly by GitHub Pages.
 ## Current
 
 <<<<<<< HEAD
-- `HikingLife.apk` — HikingLife v1.7.0, signed release (Android 8.0+, ~63 MB)
-  - SHA-256: `c32bfde12598d87188996dbaa912a4925dc02e0feab9bdae46d731a7c88f346b`
-  - Source asset: HikingLife release `v1.7.0` / `HikingLife-1.7.0.apk`
+- `HikingLife.apk` — HikingLife v1.8.0, signed release (Android 8.0+, ~63 MB)
+  - SHA-256: `4bf99531f7cc528aa85eb80568ad6f0f8c17446158323e2a86eb16f82a8185a8`
+  - Source asset: HikingLife release `v1.8.0` / `HikingLife-1.8.0.apk`
 =======
 - `HikingLife.apk` — HikingLife v1.6.0, signed release (Android 8.0+, ~63 MB)
   - SHA-256: `2c8cff7ac023909cd8a64be490d1d9dcc4228ce14afe8b0d0ef2b0354e877029`

@@ -76,7 +76,7 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.7.0</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.8.0</dd></div>
           <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">27 Oct 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>64 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
@@ -85,7 +85,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.7.0.apk" data-i18n="hiking.download">Download HikingLife 1.7.0</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.8.0.apk" data-i18n="hiking.download">Download HikingLife 1.8.0</a>
           <span class="app-file">HikingLife.apk · signed release · 64 MB</span>
         </div>
 
@@ -93,24 +93,27 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.7.0 (64 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.8.0 (64 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
           <!-- release:start -->
-          <summary data-i18n="release.summary">What's new in 1.7.0</summary>
+          <summary data-i18n="release.summary">What's new in 1.8.0</summary>
           <ul>
-            <li data-i18n="release.1">The altitude is corrected with the EGM96 geoid model. Android reports the height above the WGS-84 reference ellipsoid, while the maps and the other navigation apps show the height above mean sea level; the two differ by the geoid undulation, which is about 50 m in Europe. A spot that reads 206 m in another app now reads 206 m here too.</li>
-            <li data-i18n="release.2">The correction applies to the recorded tracks as well, so the elevation profile of a new hike shows the real heights above sea level.</li>
-            <li data-i18n="release.3">The altitude in the status panel is smoothed, so it no longer jumps around by a few meters with the GPS noise.</li>
-            <li data-i18n="release.4">Tracks recorded before this version keep the old, ellipsoidal altitude: their profile sits about 50 m above the real height above sea level.</li>
+            <li data-i18n="release.1">A new **Maps** entry in the side menu, next to the map style and the saved recordings. It lists the published maps, the ones you already downloaded and the one that is currently shown.</li>
+            <li data-i18n="release.2">The published maps are read from a catalogue, so a new map shows up in the list without updating the app.</li>
+            <li data-i18n="release.3">A map is downloaded with a progress bar, and the file is checked before it is used: a broken or incomplete download is refused instead of leaving a map that cannot be shown.</li>
+            <li data-i18n="release.4">The map you select becomes the map of the app, and its attribution is added next to the attribution of the style, so the author of the map is always credited.</li>
+            <li data-i18n="release.5">You can go back to the standard styles at any time. The downloaded map stays on the phone, so you can select it again later without downloading it twice.</li>
+            <li data-i18n="release.6">The maps you no longer want can be deleted from the same menu, and the space they take is freed.</li>
+            <li data-i18n="release.7">The address of the catalogue is shown at the top of the menu and can be changed, so you can read the maps from your own copy or from a mirror.</li>
           </ul>
           <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">c32bfde12598d87188996dbaa912a4925dc02e0feab9bdae46d731a7c88f346b</code>
+          SHA-256: <code id="apk-sha256">4bf99531f7cc528aa85eb80568ad6f0f8c17446158323e2a86eb16f82a8185a8</code>
         </p>
       </article>
 
@@ -242,6 +245,18 @@
       <div class="changelog">
         <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.8.0</strong> · <span data-i18n="changelog.180.title">The maps you want, in the Maps menu</span> <time datetime="2026-10-27">27 Oct 2026</time></summary>
+          <ul>
+            <li data-i18n="changelog.180.1">A new **Maps** entry in the side menu, next to the map style and the saved recordings. It lists the published maps, the ones you already downloaded and the one that is currently shown.</li>
+            <li data-i18n="changelog.180.2">The published maps are read from a catalogue, so a new map shows up in the list without updating the app.</li>
+            <li data-i18n="changelog.180.3">A map is downloaded with a progress bar, and the file is checked before it is used: a broken or incomplete download is refused instead of leaving a map that cannot be shown.</li>
+            <li data-i18n="changelog.180.4">The map you select becomes the map of the app, and its attribution is added next to the attribution of the style, so the author of the map is always credited.</li>
+            <li data-i18n="changelog.180.5">You can go back to the standard styles at any time. The downloaded map stays on the phone, so you can select it again later without downloading it twice.</li>
+            <li data-i18n="changelog.180.6">The maps you no longer want can be deleted from the same menu, and the space they take is freed.</li>
+            <li data-i18n="changelog.180.7">The address of the catalogue is shown at the top of the menu and can be changed, so you can read the maps from your own copy or from a mirror.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.7.0</strong> · <span data-i18n="changelog.170.title">An altitude that matches the other apps</span> <time datetime="2026-10-27">27 Oct 2026</time></summary>
           <ul>
             <li data-i18n="changelog.170.1">The altitude is corrected with the EGM96 geoid model. Android reports the height above the WGS-84 reference ellipsoid, while the maps and the other navigation apps show the height above mean sea level; the two differ by the geoid undulation, which is about 50 m in Europe. A spot that reads 206 m in another app now reads 206 m here too.</li>
