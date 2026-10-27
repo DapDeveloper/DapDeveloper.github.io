@@ -80,12 +80,14 @@
       "qr.alt": "QR code to download HikingLife",
       "qr.title": "Scan to install",
       "qr.caption": "Point your phone camera at the code to download HikingLife 1.5.0 (63 MB).",
+      // release:en:start
       "release.summary": "What's new in 1.5.0",
       "release.1": "The top quarter of the screen is a fixed status panel (40% in landscape) with distance, time, current and average speed, steps and elevation gain; Record, Pause and Stop sit in its header.",
       "release.2": "The map menu is now a side drawer, opened with an arrow on the map and closed with its own arrow, the back gesture or a tap outside.",
       "release.3": "Track recording shows the live current speed next to the average speed, both in the panel and in the ongoing notification.",
       "release.4": "Offline downloads now cover all three map styles in a single run, and every style is cached under its own key so a downloaded area renders with any style you pick later.",
       "release.5": "On landscape screens the menu arrow, measure, download and locate buttons no longer overlap.",
+      // release:en:end
       "install.title": "How to install",
       "install.1": "Download the APK on your Android device.",
       "install.2": "When prompted, allow your browser to install unknown apps.",
@@ -113,6 +115,7 @@
       "faq.a8": "Contact me on <a href=\"https://github.com/DapDeveloper\">GitHub</a> or <a href=\"https://www.linkedin.com/in/daniel-petrea-857741133\" rel=\"noopener\">LinkedIn</a> with your Android version, device model, and steps to reproduce. Include a screenshot if possible.",
       "changelog.title": "Changelog",
       "changelog.sub": "Release history, newest first.",
+      // changelog:en:start
       "changelog.150.title": "Split screen, live speed and offline maps for every style",
       "changelog.150.1": "A fixed status panel on top always shows the track stats, and the map takes the rest of the screen.",
       "changelog.150.2": "The map menu moved into a side drawer opened with an arrow.",
@@ -143,6 +146,7 @@
       "changelog.100.title": "First release",
       "changelog.100.1": "OpenTopoMap with an offline Italy pack (zoom 8–10).",
       "changelog.100.2": "Pan, zoom, rotate, and center on GPS.",
+      // changelog:en:end
       "index.pizza.desc": "A pizza dough calculator: hydration, ball weight, proofing temperature and time in, flour, water, yeast, sugar and salt in grams out.",
       "index.pizza.meta": "Version 1.0.0 · Android 8.0+ · 6.2 MB · debug build",
       "perfectpizza.tagline": "Pizza dough calculator",
@@ -244,12 +248,14 @@
       "qr.alt": "QR code per scaricare HikingLife",
       "qr.title": "Scansiona per installare",
       "qr.caption": "Inquadra il codice con la fotocamera del telefono per scaricare HikingLife 1.5.0 (63 MB).",
+      // release:it:start
       "release.summary": "Novità nella 1.5.0",
       "release.1": "Il quarto superiore dello schermo è un pannello di stato fisso (40% in orizzontale) con distanza, tempo, velocità attuale e media, passi e dislivello; Registra, Pausa e Stop si trovano nell'intestazione.",
       "release.2": "Il menu mappa è ora un cassetto laterale, aperto con una freccia sulla mappa e chiuso con la propria freccia, il gesture indietro o un tocco fuori.",
       "release.3": "Durante la registrazione la velocità attuale è mostrata accanto a quella media, sia nel pannello sia nella notifica in corso.",
       "release.4": "I download offline coprono ora tutti e tre gli stili mappa in un'unica esecuzione, e ogni stile è memorizzato con la propria chiave, così un'area scaricata si vede con qualsiasi stile scelto in seguito.",
       "release.5": "In orizzontale la freccia del menu e i pulsanti di misura, download e posizione non si sovrappongono più.",
+      // release:it:end
       "install.title": "Come installare",
       "install.1": "Scarica l'APK sul tuo dispositivo Android.",
       "install.2": "Quando richiesto, consenti al browser di installare app sconosciute.",
@@ -277,6 +283,7 @@
       "faq.a8": "Contattami su <a href=\"https://github.com/DapDeveloper\">GitHub</a> o <a href=\"https://www.linkedin.com/in/daniel-petrea-857741133\" rel=\"noopener\">LinkedIn</a> indicando versione di Android, modello del dispositivo e passi per riprodurre il problema. Se possibile, allega uno screenshot.",
       "changelog.title": "Cronologia",
       "changelog.sub": "Cronologia delle versioni, dalla più recente.",
+      // changelog:it:start
       "changelog.150.title": "Schermo diviso, velocità in tempo reale e mappe offline per ogni stile",
       "changelog.150.1": "Un pannello di stato fisso in alto mostra sempre i dati della traccia, e la mappa occupa il resto dello schermo.",
       "changelog.150.2": "Il menu mappa è stato spostato in un cassetto laterale aperto con una freccia.",
@@ -307,6 +314,7 @@
       "changelog.100.title": "Prima release",
       "changelog.100.1": "OpenTopoMap con pacchetto offline dell'Italia (zoom 8–10).",
       "changelog.100.2": "Pan, zoom, rotazione e centratura sul GPS.",
+      // changelog:it:end
       "index.pizza.desc": "Un calcolatore per l'impasto della pizza: idratazione, peso del panetto, temperatura e tempo di lievitazione in ingresso; farina, acqua, lievito, zucchero e sale in grammi in uscita.",
       "index.pizza.meta": "Versione 1.0.0 · Android 8.0+ · 6.2 MB · build di debug",
       "perfectpizza.tagline": "Calcolatore per l'impasto della pizza",
