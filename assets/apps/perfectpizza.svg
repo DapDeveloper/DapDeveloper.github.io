@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="PerfectPizza app icon">
+  <defs>
+    <linearGradient id="pizza-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF8EE"/>
+      <stop offset="1" stop-color="#F7E3C6"/>
+    </linearGradient>
+    <clipPath id="pizza-clip">
+      <rect width="108" height="108" rx="24" ry="24"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#pizza-clip)">
+    <rect width="108" height="108" fill="url(#pizza-bg)"/>
+    <circle cx="54" cy="54" r="34" fill="#FFFFFF" opacity="0.55"/>
+    <path d="M30 32 L78 32 L74 40 L34 40 Z" fill="#E8A33D"/>
+    <path d="M34 38 L74 38 L54 80 Z" fill="#F7C948"/>
+    <path d="M34 38 L74 38 L72 44 L36 44 Z" fill="#FFDD7A" opacity="0.8"/>
+    <circle cx="45" cy="47" r="4" fill="#C0392B"/>
+    <circle cx="63" cy="47" r="4" fill="#C0392B"/>
+    <circle cx="54" cy="62" r="3.5" fill="#C0392B"/>
+    <path d="M50 55 q4 3 8 0" stroke="#3E6B3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

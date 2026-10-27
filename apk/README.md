@@ -15,6 +15,13 @@ APK files in this folder are served directly by GitHub Pages.
 The previous `HikingLife-debug.apk` (v1.2.0) was removed. Users upgrading
 from it must uninstall once because the signing key changed.
 
+- `PerfectPizza.apk` — PerfectPizza v1.0.0, debug build (Android 8.0+, ~6.2 MB)
+  - SHA-256: `7dac06d58acd9077b6c922293c9b4308a047628e0a09399376dcb1006b24b2c7`
+  - Source: `DapDeveloper/PerfectPizza`, `app-debug.apk` from
+    `gradlew assembleDebug`
+  - Stable filename; replaced on each release. A signed release will replace
+    this debug build, which will then require one uninstall.
+
 ## Adding an app
 
 1. Copy the APK here.
