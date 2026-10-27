@@ -44,42 +44,45 @@
         <p class="eyebrow">Privacy</p>
         <h1>Privacy policy</h1>
         <p class="lead">How HikingLife and this website handle your information.</p>
-        <p class="privacy-updated">Last updated: <time datetime="2026-10-26">26 October 2026</time></p>
+        <p class="privacy-updated">Last updated: <time datetime="2026-10-27">27 October 2026</time></p>
       </div>
       <div class="privacy-it" lang="it">
         <p class="eyebrow">Privacy</p>
         <h1>Informativa privacy</h1>
         <p class="lead">Come HikingLife e questo sito gestiscono i tuoi dati.</p>
-        <p class="privacy-updated">Ultimo aggiornamento: <time datetime="2026-10-26">26 ottobre 2026</time></p>
+        <p class="privacy-updated">Ultimo aggiornamento: <time datetime="2026-10-27">27 ottobre 2026</time></p>
       </div>
     </section>
 
     <section class="section container">
       <div class="privacy-body privacy-en" lang="en">
         <h2>Overview</h2>
-        <p>HikingLife is a hiking map app developed by Daniel Petrea in Italy. This policy covers HikingLife 1.2.1 and later, and the website at dapdeveloper.github.io.</p>
-        <p><strong>Short version:</strong> HikingLife has no account, ads, analytics, or developer-operated server. Your location stays on your device. Map tiles are requested directly from OpenTopoMap.</p>
+        <p>HikingLife is a hiking map app developed by Daniel Petrea in Italy. This policy covers HikingLife 1.4.0 and later, and the website at dapdeveloper.github.io.</p>
+        <p><strong>Short version:</strong> HikingLife has no account, ads, analytics, or developer-operated server. Your location and recorded tracks stay on your device. Map tiles are requested directly from OpenTopoMap, OSM France and Waymarked Trails. Trail routing sends only the route endpoints to FOSSGIS/OSRM; straight-line measuring and navigation work offline.</p>
 
         <h2>Information the app handles</h2>
-        <h3>Location</h3>
-        <p>When you tap the location button, HikingLife asks Android for your device's GPS or network location so it can center the map. The position is processed on your device. The app does not store it, send it to the developer, or record a track in version 1.2.1.</p>
+        <h3>Location and tracks</h3>
+        <p>HikingLife asks Android for your device's GPS or network location to center the map, record tracks, measure distances and navigate. Positions and recorded tracks are processed and stored on your device. The app does not send them to the developer. Saved recordings stay in the app's private storage until you delete them or clear the app data.</p>
 
         <h3>Map tiles and downloads</h3>
-        <p>To display maps and download offline areas, the app connects directly to OpenTopoMap tile servers (a.tile.opentopomap.org, b.tile.opentopomap.org, and c.tile.opentopomap.org). Those servers receive standard request information, such as your IP address, user agent, and the requested tile coordinates. The developer does not receive or store this information. OpenTopoMap's own policies apply to its servers.</p>
+        <p>To display maps and download offline areas, the app connects directly to OpenTopoMap (a.tile.opentopomap.org, b.tile.opentopomap.org and c.tile.opentopomap.org) for the Relief style, OSM France for the Streets style, and OSM HOT tiles plus Waymarked Trails for the Fast style. When you measure or navigate along trails, the start and end coordinates are sent to the FOSSGIS/OSRM foot-routing service. These servers receive standard request information, such as your IP address, user agent, and the requested tile coordinates or route endpoints. The developer does not receive or store this information. The providers' own policies apply to their servers.</p>
 
         <h3>Local storage</h3>
-        <p>Map tiles, the tile cache, and app settings are stored locally on your device. You can remove them in Android settings by clearing HikingLife's cache or storage, or by uninstalling the app.</p>
+        <p>Map tiles, the tile cache, app settings and recorded tracks are stored locally on your device. You can remove them in Android settings by clearing HikingLife's cache or storage, or by uninstalling the app.</p>
 
         <h3>No accounts, ads, analytics, or crash reporting</h3>
         <p>HikingLife does not require an account and does not include advertising, analytics, or third-party crash-reporting SDKs.</p>
 
         <h2>Permissions</h2>
         <ul>
-          <li><strong>Internet and network state:</strong> load online map tiles and download offline areas.</li>
-          <li><strong>Precise and approximate location:</strong> center the map on your position when you ask. Location is optional; you can deny the permission and still use the map.</li>
+          <li><strong>Internet and network state:</strong> load online map tiles, download offline areas, and request trail routes.</li>
+          <li><strong>Precise and approximate location:</strong> center the map, record tracks, measure and navigate. Recording and navigation need a fix; you can deny the permission and still browse the map.</li>
+          <li><strong>Background location:</strong> keep recording while the screen is off, only while a recording service is running.</li>
+          <li><strong>Notifications and foreground service:</strong> show the ongoing recording notification and controls on Android 13+.</li>
+          <li><strong>Activity recognition:</strong> optional step counting on Android 10+.</li>
           <li><strong>Wake lock:</strong> keep the CPU awake during long map downloads.</li>
         </ul>
-        <p>The app does not request background location, storage, contacts, camera, microphone, or phone permissions.</p>
+        <p>The app does not request storage, contacts, camera, microphone, or phone permissions.</p>
 
         <h2>This website</h2>
         <p>This website is hosted by GitHub Pages. GitHub may process technical information such as IP addresses and request logs to operate and secure the service; see GitHub's privacy statement for details.</p>
@@ -87,7 +90,7 @@
         <p>Links to LinkedIn, GitHub, and Google Maps are governed by the privacy policies of those services.</p>
 
         <h2>Sharing and retention</h2>
-        <p>The developer does not collect, sell, or share personal data from the app. Information sent to OpenTopoMap is subject to OpenTopoMap's policies. Local app data stays on your device until you clear it or uninstall the app.</p>
+        <p>The developer does not collect, sell, or share personal data from the app. Information sent to OpenTopoMap, OSM France, Waymarked Trails and FOSSGIS/OSRM is subject to those providers' policies. Local app data and recorded tracks stay on your device until you clear them or uninstall the app.</p>
 
         <h2>Children</h2>
         <p>HikingLife is not directed to children under 13, and the developer does not knowingly collect personal data from children.</p>
@@ -101,29 +104,32 @@
 
       <div class="privacy-body privacy-it" lang="it">
         <h2>Panoramica</h2>
-        <p>HikingLife è un'app di mappe per l'escursionismo sviluppata da Daniel Petrea in Italia. Questa informativa riguarda HikingLife 1.2.1 e versioni successive e il sito dapdeveloper.github.io.</p>
-        <p><strong>Versione breve:</strong> HikingLife non ha account, pubblicità, analytics o server gestiti dallo sviluppatore. La tua posizione resta sul dispositivo. Le tile della mappa vengono richieste direttamente a OpenTopoMap.</p>
+        <p>HikingLife è un'app di mappe per l'escursionismo sviluppata da Daniel Petrea in Italia. Questa informativa riguarda HikingLife 1.4.0 e versioni successive e il sito dapdeveloper.github.io.</p>
+        <p><strong>Versione breve:</strong> HikingLife non ha account, pubblicità, analytics o server gestiti dallo sviluppatore. La tua posizione e le tracce registrate restano sul dispositivo. Le tile della mappa vengono richieste direttamente a OpenTopoMap, OSM France e Waymarked Trails. Il routing su sentieri invia solo gli estremi del percorso a FOSSGIS/OSRM; la misura e la navigazione in linea retta funzionano offline.</p>
 
         <h2>Dati trattati dall'app</h2>
-        <h3>Posizione</h3>
-        <p>Quando tocchi il pulsante della posizione, HikingLife chiede ad Android la posizione GPS o di rete del dispositivo per centrare la mappa. La posizione viene elaborata sul dispositivo. L'app non la memorizza, non la invia allo sviluppatore e nella versione 1.2.1 non registra tracce.</p>
+        <h3>Posizione e tracce</h3>
+        <p>HikingLife chiede ad Android la posizione GPS o di rete del dispositivo per centrare la mappa, registrare tracce, misurare distanze e navigare. Le posizioni e le tracce registrate vengono elaborate e memorizzate sul dispositivo. L'app non le invia allo sviluppatore. Le registrazioni salvate restano nella memoria privata dell'app finché non le elimini o cancelli i dati dell'app.</p>
 
         <h3>Tile della mappa e download</h3>
-        <p>Per mostrare le mappe e scaricare aree offline, l'app si collega direttamente ai server delle tile di OpenTopoMap (a.tile.opentopomap.org, b.tile.opentopomap.org e c.tile.opentopomap.org). Questi server ricevono informazioni standard sulla richiesta, come indirizzo IP, user agent e coordinate della tile richiesta. Lo sviluppatore non riceve né memorizza queste informazioni. Si applicano le informative di OpenTopoMap.</p>
+        <p>Per mostrare le mappe e scaricare aree offline, l'app si collega direttamente a OpenTopoMap (a.tile.opentopomap.org, b.tile.opentopomap.org e c.tile.opentopomap.org) per lo stile Relief, a OSM France per lo stile Streets e alle tile OSM HOT più Waymarked Trails per lo stile Fast. Quando misuri o navighi lungo i sentieri, le coordinate di partenza e arrivo vengono inviate al servizio di routing pedonale FOSSGIS/OSRM. Questi server ricevono informazioni standard sulla richiesta, come indirizzo IP, user agent e coordinate della tile o estremi del percorso. Lo sviluppatore non riceve né memorizza queste informazioni. Si applicano le informative dei rispettivi fornitori.</p>
 
         <h3>Memoria locale</h3>
-        <p>Le tile, la cache e le impostazioni dell'app sono memorizzate localmente sul dispositivo. Puoi rimuoverle dalle impostazioni Android cancellando la cache o i dati di HikingLife, oppure disinstallando l'app.</p>
+        <p>Le tile, la cache, le impostazioni e le tracce registrate sono memorizzate localmente sul dispositivo. Puoi rimuoverle dalle impostazioni Android cancellando la cache o i dati di HikingLife, oppure disinstallando l'app.</p>
 
         <h3>Nessun account, pubblicità, analytics o segnalazione crash</h3>
         <p>HikingLife non richiede un account e non include pubblicità, analytics o SDK di terze parti per la segnalazione dei crash.</p>
 
         <h2>Permessi</h2>
         <ul>
-          <li><strong>Internet e stato della rete:</strong> caricare le tile online e scaricare aree offline.</li>
-          <li><strong>Posizione precisa e approssimativa:</strong> centrare la mappa sulla tua posizione quando lo richiedi. La posizione è facoltativa; puoi negare il permesso e usare comunque la mappa.</li>
+          <li><strong>Internet e stato della rete:</strong> caricare le tile online, scaricare aree offline e richiedere percorsi su sentiero.</li>
+          <li><strong>Posizione precisa e approssimativa:</strong> centrare la mappa, registrare tracce, misurare e navigare. Registrazione e navigazione richiedono un fix; puoi negare il permesso e usare comunque la mappa.</li>
+          <li><strong>Posizione in background:</strong> continuare a registrare con lo schermo spento, solo mentre è attivo il servizio di registrazione.</li>
+          <li><strong>Notifiche e servizio in primo piano:</strong> mostrare la notifica di registrazione e i relativi controlli su Android 13+.</li>
+          <li><strong>Riconoscimento attività:</strong> conteggio passi opzionale su Android 10+.</li>
           <li><strong>Wake lock:</strong> mantenere la CPU attiva durante i download lunghi.</li>
         </ul>
-        <p>L'app non richiede posizione in background, archiviazione, contatti, fotocamera, microfono o telefono.</p>
+        <p>L'app non richiede permessi per archiviazione, contatti, fotocamera, microfono o telefono.</p>
 
         <h2>Questo sito</h2>
         <p>Questo sito è ospitato da GitHub Pages. GitHub può trattare informazioni tecniche come indirizzi IP e log delle richieste per gestire e proteggere il servizio; consulta l'informativa privacy di GitHub.</p>
@@ -131,7 +137,7 @@
         <p>I link a LinkedIn, GitHub e Google Maps sono regolati dalle informative privacy dei rispettivi servizi.</p>
 
         <h2>Condivisione e conservazione</h2>
-        <p>Lo sviluppatore non raccoglie, vende o condivide dati personali dall'app. Le informazioni inviate a OpenTopoMap sono soggette alle sue policy. I dati locali restano sul dispositivo finché non li cancelli o disinstalli l'app.</p>
+        <p>Lo sviluppatore non raccoglie, vende o condivide dati personali dall'app. Le informazioni inviate a OpenTopoMap, OSM France, Waymarked Trails e FOSSGIS/OSRM sono soggette alle informative di quei fornitori. I dati locali e le tracce restano sul dispositivo finché non li cancelli o disinstalli l'app.</p>
 
         <h2>Minori</h2>
         <p>HikingLife non è destinata a minori di 13 anni e lo sviluppatore non raccoglie consapevolmente dati personali di minori.</p>

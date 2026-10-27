@@ -59,22 +59,25 @@
         </div>
 
         <p class="app-description" data-i18n="hiking.description">
-          A hiking map built on free OpenStreetMap maps. Center on your GPS
-          position, pan and zoom, and download map areas for use without a
-          network connection. GPX routes and track recording are in development.
+          A hiking map built on free OpenStreetMap maps, with track recording
+          and live stats, three map styles, point-to-point measuring and trail
+          navigation. Center on your GPS position, pan and zoom, and download
+          map areas for use without a network connection.
         </p>
 
         <ul class="tag-list">
           <li data-i18n="tag.offline">Offline maps</li>
-          <li>OpenStreetMap</li>
+          <li data-i18n="tag.recording">Track recording</li>
           <li data-i18n="tag.position">Live GPS position</li>
-          <li data-i18n="tag.download">Offline area download</li>
+          <li data-i18n="tag.styles">Three map styles</li>
+          <li data-i18n="tag.navigation">Measuring &amp; navigation</li>
+          <li>OpenStreetMap</li>
           <li>Kotlin</li>
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.2.1</dd></div>
-          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">26 Oct 2026</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.4.0</dd></div>
+          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">27 Oct 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>63 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
           <div><dt data-i18n="detail.build">Build</dt><dd data-i18n="detail.build.value">Signed release APK</dd></div>
@@ -82,7 +85,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.2.1.apk" data-i18n="hiking.download">Download HikingLife 1.2.1</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.4.0.apk" data-i18n="hiking.download">Download HikingLife 1.4.0</a>
           <span class="app-file">HikingLife.apk · signed release · 63 MB</span>
         </div>
 
@@ -90,23 +93,25 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.2.1 (63 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.4.0 (63 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
-          <summary data-i18n="release.summary">What's new in 1.2.1</summary>
+          <summary data-i18n="release.summary">What's new in 1.4.0</summary>
           <ul>
-            <li data-i18n="release.1">Dedicated release signing key: Android can verify this and future updates from the same developer.</li>
-            <li data-i18n="release.2">Same map and offline download features as 1.2.0.</li>
-            <li data-i18n="release.3">Uninstall the old debug build (1.2.0) once before installing this version.</li>
-            <li data-i18n="release.4">Future signed updates can be installed over this release.</li>
-            <li data-i18n="release.5">GPX import/export and track recording are still in development.</li>
+            <li data-i18n="release.1">Three map styles, remembered across launches: Relief with contours and hillshading, Streets, and a light Fast style with marked trails.</li>
+            <li data-i18n="release.2">Record tracks with live distance, moving time, speed, steps, elevation gain and a live elevation profile; pause, resume, and keep recording with the screen off.</li>
+            <li data-i18n="release.3">Saved recordings list date, distance, duration, steps and elevation; select one to draw its track on the map.</li>
+            <li data-i18n="release.4">Measure the direct and trail distance between two points, with estimated times and a toggle for the drawn line.</li>
+            <li data-i18n="release.5">Long-press a point to navigate there straight or following trails, with remaining distance and time updated from GPS until arrival.</li>
+            <li data-i18n="release.6">Download offline maps for a country, a city, a searched place or the current view, with size estimates and a cap for oversized downloads.</li>
+            <li data-i18n="release.7">Trail routes and trail distances need a data connection (FOSSGIS/OSRM); measuring and navigating in a straight line work offline.</li>
           </ul>
         </details>
 
         <p class="checksum">
-          SHA-256: <code>0a68d154de843de45c1d621a9a18c421dacd9fbfda4f2c4edeb25a2fca8337a2</code>
+          SHA-256: <code id="apk-sha256">c67bf411978530b656fddc657db8cb63140b61e3dc4657272fac706414597022</code>
         </p>
       </article>
 
@@ -137,11 +142,11 @@
         </details>
         <details class="faq-item">
           <summary data-i18n="faq.q2">Does it work offline?</summary>
-          <p data-i18n="faq.a2">The app includes an offline Italy map for zoom 8–10. You can download all of Italy at zoom 8–12 or the visible area at zoom 13–16 before leaving. Higher zoom levels load online and are cached when a connection is available.</p>
+          <p data-i18n="faq.a2">The app includes an offline Italy map for zoom 8–10. Before leaving you can download a country, a city, a searched place or the current view at overview (Z8–Z12) or trail detail (Z13–Z16) zoom. Other areas and higher zooms load online and are cached when a connection is available. Straight-line measuring and navigation work offline; trail routing needs a connection.</p>
         </details>
         <details class="faq-item">
           <summary data-i18n="faq.q3">Does it track or share my location?</summary>
-          <p data-i18n="faq.a3">No. Location is used only on your device to center the map when you tap the GPS button. HikingLife has no account, analytics, ads, or developer-operated server, and it does not send your position to us. Map tile requests go to OpenTopoMap, which receives standard network information such as your IP address.</p>
+          <p data-i18n="faq.a3">Recorded tracks and saved recordings stay in the app's private storage on your device. HikingLife has no account, analytics, ads, or developer-operated server, and it does not send your position to the developer. Map tiles are requested from OpenTopoMap, OSM France and Waymarked Trails, and trail distances or navigation send the start and end coordinates to the FOSSGIS/OSRM routing service. These providers receive standard network information such as your IP address.</p>
         </details>
         <details class="faq-item">
           <summary data-i18n="faq.q4">Which Android versions are supported?</summary>
@@ -156,8 +161,8 @@
           <p data-i18n="faq.a6">Install the new APK over the current one. The first signed release (1.2.1) is the exception: if you have the old debug build (1.2.0), uninstall it once because the signing key changed.</p>
         </details>
         <details class="faq-item">
-          <summary data-i18n="faq.q7">Are GPX and track recording available?</summary>
-          <p data-i18n="faq.a7">Not yet. They are in development; the current release focuses on the map, GPS position, and offline areas.</p>
+          <summary data-i18n="faq.q7">Are track recording and GPX available?</summary>
+          <p data-i18n="faq.a7">Track recording, live stats, saved recordings and elevation profiles are available since 1.3.0. Tracks are stored on the device in a JSON Lines format; GPX import/export is planned for a future release.</p>
         </details>
         <details class="faq-item">
           <summary data-i18n="faq.q8">How do I report a bug?</summary>
@@ -173,6 +178,23 @@
       </div>
       <div class="changelog">
         <details class="changelog-item" open>
+          <summary><strong>1.4.0</strong> · <span data-i18n="changelog.140.title">Map styles, measuring and navigation</span> <time datetime="2026-10-27">2026-10-27</time></summary>
+          <ul>
+            <li data-i18n="changelog.140.1">Relief, Streets and Fast map styles, remembered across launches.</li>
+            <li data-i18n="changelog.140.2">Measure the direct and trail distance between two points with estimated times.</li>
+            <li data-i18n="changelog.140.3">Long-press navigation, straight or on trails, with live remaining distance and time.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
+          <summary><strong>1.3.0</strong> · <span data-i18n="changelog.130.title">Track recording and saved recordings</span> <time datetime="2026-10-26">2026-10-26</time></summary>
+          <ul>
+            <li data-i18n="changelog.130.1">Record tracks with live distance, time, speed, steps and elevation gain, plus an elevation profile.</li>
+            <li data-i18n="changelog.130.2">Pause, resume and stop; recording continues with the screen off from a foreground service.</li>
+            <li data-i18n="changelog.130.3">Saved recordings draw their track on the map and show distance, duration, steps and elevation.</li>
+            <li data-i18n="changelog.130.4">Offline download by country, city, searched place or current view, with size estimates and caps.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.2.1</strong> · <span data-i18n="changelog.121.title">First signed release</span> <time datetime="2026-10-26">2026-10-26</time></summary>
           <ul>
             <li data-i18n="changelog.121.1">Dedicated release signing key; future updates can be installed over this build.</li>
