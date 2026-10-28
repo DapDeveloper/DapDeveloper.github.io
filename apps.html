@@ -76,7 +76,7 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.10.0</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.11.0</dd></div>
           <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">28 Oct 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>6 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
@@ -85,7 +85,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.10.0.apk" data-i18n="hiking.download">Download HikingLife 1.10.0</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.11.0.apk" data-i18n="hiking.download">Download HikingLife 1.11.0</a>
           <span class="app-file">HikingLife.apk · signed release · 6 MB</span>
         </div>
 
@@ -93,23 +93,24 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.10.0 (6 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.11.0 (6 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
           <!-- release:start -->
-          <summary data-i18n="release.summary">What's new in 1.10.0</summary>
+          <summary data-i18n="release.summary">What's new in 1.11.0</summary>
           <ul>
-            <li data-i18n="release.1">The map no longer stops at its deepest level: past it the app scales the highest level the file carries, so you can keep zooming in on a trail or on your position.</li>
-            <li data-i18n="release.2">The view zooms up to four levels past the end of the map, and the picture gets softer with every level. For those levels the app never uses the network.</li>
-            <li data-i18n="release.3">The minimum zoom is still the one of the map, so the whole area fits the screen as before. Nothing else changes in the download or in the Maps menu.</li>
+            <li data-i18n="release.1">A region is now one download that stays sharp at every zoom: trails, water, woods, roads, peaks and huts are drawn on your phone instead of arriving as separate pictures for each level.</li>
+            <li data-i18n="release.2">Peaks, huts, viewpoints, water points and place names are drawn above the map, so a name is never cut at the edge of a tile, never appears twice and never covers another name.</li>
+            <li data-i18n="release.3">The download is smaller than the old picture pyramid for the same area, and it keeps zooming further than the old maps did.</li>
+            <li data-i18n="release.4">Maps downloaded with the previous version are not read by this one: open the Maps menu and download your map again.</li>
           </ul>
           <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">ed0a5f3805cee9a364d848866ac59967ea2eb9dcf8ca64a763a96cae9abde81b</code>
+          SHA-256: <code id="apk-sha256">fa2beeab8a5ec190660f4950a1d5c69bf9579ea833cac4f90d965fa3236c53b0</code>
         </p>
       </article>
 
@@ -241,6 +242,15 @@
       <div class="changelog">
         <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.11.0</strong> · <span data-i18n="changelog.1110.title">Vector maps: one file for every zoom</span> <time datetime="2026-10-28">28 Oct 2026</time></summary>
+          <ul>
+            <li data-i18n="changelog.1110.1">A region is now one download that stays sharp at every zoom: trails, water, woods, roads, peaks and huts are drawn on your phone instead of arriving as separate pictures for each level.</li>
+            <li data-i18n="changelog.1110.2">Peaks, huts, viewpoints, water points and place names are drawn above the map, so a name is never cut at the edge of a tile, never appears twice and never covers another name.</li>
+            <li data-i18n="changelog.1110.3">The download is smaller than the old picture pyramid for the same area, and it keeps zooming further than the old maps did.</li>
+            <li data-i18n="changelog.1110.4">Maps downloaded with the previous version are not read by this one: open the Maps menu and download your map again.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.10.0</strong> · <span data-i18n="changelog.1100.title">One map, every zoom</span> <time datetime="2026-10-28">28 Oct 2026</time></summary>
           <ul>
             <li data-i18n="changelog.1100.1">The map no longer stops at its deepest level: past it the app scales the highest level the file carries, so you can keep zooming in on a trail or on your position.</li>
