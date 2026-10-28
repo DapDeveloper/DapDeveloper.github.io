@@ -76,7 +76,7 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.9.0</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.10.0</dd></div>
           <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">28 Oct 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>6 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
@@ -85,7 +85,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.9.0.apk" data-i18n="hiking.download">Download HikingLife 1.9.0</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.10.0.apk" data-i18n="hiking.download">Download HikingLife 1.10.0</a>
           <span class="app-file">HikingLife.apk · signed release · 6 MB</span>
         </div>
 
@@ -93,26 +93,23 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.9.0 (6 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.10.0 (6 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
           <!-- release:start -->
-          <summary data-i18n="release.summary">What's new in 1.9.0</summary>
+          <summary data-i18n="release.summary">What's new in 1.10.0</summary>
           <ul>
-            <li data-i18n="release.1">The map of the app is now the map you download from the **Maps** menu. On a new install the map screen explains that a map is needed and opens the menu by itself; once the download finishes the map is drawn from the phone.</li>
-            <li data-i18n="release.2">You can keep several downloaded maps and choose the one to use; the menu shows the name, zoom range, area and author of each one, and deleting a map frees the space it takes.</li>
-            <li data-i18n="release.3">The map stops at the zoom levels your file carries, so every level you can see is really stored on the phone; the range is shown together with the map.</li>
-            <li data-i18n="release.4">When the selected map is deleted the screen goes back to the empty state, where a single button takes you to the Maps menu.</li>
-            <li data-i18n="release.5">Measuring and long-press navigation now always follow a straight line and work with no connection; navigation shows the remaining distance as you walk.</li>
-            <li data-i18n="release.6">The map files still come from the public downloads repository, and a map published later appears in the menu without updating the app.</li>
+            <li data-i18n="release.1">The map no longer stops at its deepest level: past it the app scales the highest level the file carries, so you can keep zooming in on a trail or on your position.</li>
+            <li data-i18n="release.2">The view zooms up to four levels past the end of the map, and the picture gets softer with every level. For those levels the app never uses the network.</li>
+            <li data-i18n="release.3">The minimum zoom is still the one of the map, so the whole area fits the screen as before. Nothing else changes in the download or in the Maps menu.</li>
           </ul>
           <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">8e704c4a9ad583b1189ff4124c0c3daaf049b08345b0e10b3f7f4b9ffe3a9bdf</code>
+          SHA-256: <code id="apk-sha256">ed0a5f3805cee9a364d848866ac59967ea2eb9dcf8ca64a763a96cae9abde81b</code>
         </p>
       </article>
 
@@ -244,6 +241,14 @@
       <div class="changelog">
         <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.10.0</strong> · <span data-i18n="changelog.1100.title">One map, every zoom</span> <time datetime="2026-10-28">28 Oct 2026</time></summary>
+          <ul>
+            <li data-i18n="changelog.1100.1">The map no longer stops at its deepest level: past it the app scales the highest level the file carries, so you can keep zooming in on a trail or on your position.</li>
+            <li data-i18n="changelog.1100.2">The view zooms up to four levels past the end of the map, and the picture gets softer with every level. For those levels the app never uses the network.</li>
+            <li data-i18n="changelog.1100.3">The minimum zoom is still the one of the map, so the whole area fits the screen as before. Nothing else changes in the download or in the Maps menu.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.9.0</strong> · <span data-i18n="changelog.190.title">One map: the one you downloaded</span> <time datetime="2026-10-28">28 Oct 2026</time></summary>
           <ul>
             <li data-i18n="changelog.190.1">The map of the app is now the map you download from the **Maps** menu. On a new install the map screen explains that a map is needed and opens the menu by itself; once the download finishes the map is drawn from the phone.</li>
