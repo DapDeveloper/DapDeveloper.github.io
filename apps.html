@@ -76,8 +76,8 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.12.0</dd></div>
-          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">28 Oct 2026</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.13.0</dd></div>
+          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">29 Oct 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>7 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
           <div><dt data-i18n="detail.build">Build</dt><dd data-i18n="detail.build.value">Signed release APK</dd></div>
@@ -85,7 +85,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.12.0.apk" data-i18n="hiking.download">Download HikingLife 1.12.0</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.13.0.apk" data-i18n="hiking.download">Download HikingLife 1.13.0</a>
           <span class="app-file">HikingLife.apk · signed release · 7 MB</span>
         </div>
 
@@ -93,23 +93,25 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.12.0 (7 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.13.0 (7 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
           <!-- release:start -->
-          <summary data-i18n="release.summary">What's new in 1.12.0</summary>
+          <summary data-i18n="release.summary">What's new in 1.13.0</summary>
           <ul>
-            <li data-i18n="release.1">The side menu has Map colors: pick the background, the road color and the trail color, each with a live preview and its hex value.</li>
-            <li data-i18n="release.2">The choice applies to every downloaded map you open, is kept across launches and needs no download: the packages carry the layers, the app draws the colors.</li>
-            <li data-i18n="release.3">Roads keep a darker edge that follows the color you choose, so they stay readable on any background, and Standard colors brings the original look back.</li>
+            <li data-i18n="release.1">The altitude in the status panel is live also while no recording is running: it follows the fixes the map receives and stays empty only until the GPS reports an altitude.</li>
+            <li data-i18n="release.2">A new follow button on the map: one tap centres on your position and keeps the map on you while you walk. A second tap, or simply dragging the map, gives you the camera back.</li>
+            <li data-i18n="release.3">The map no longer jumps back to your position a few seconds after you pan away: it moves only on the launch, when you ask for it or while follow is on.</li>
+            <li data-i18n="release.4">The bar under the map always shows the coordinates of the latest fix, updated as you move, together with the state of the GPS signal.</li>
+            <li data-i18n="release.5">Map colors now uses a round color wheel with a brightness slider: pick the hue and the saturation on the circle instead of moving three RGB sliders.</li>
           </ul>
           <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">289aa9a12bdb9b3e54e5f4ba2f329735a39996ecf4c2c51074ecc0397381a45e</code>
+          SHA-256: <code id="apk-sha256">38e1febcc0310ee93dcf62cadc22b5648567ff40ec4cea04116bf554c23e7d45</code>
         </p>
       </article>
 
@@ -241,6 +243,16 @@
       <div class="changelog">
         <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.13.0</strong> · <span data-i18n="changelog.1130.title">The live GPS and the follow button</span> <time datetime="2026-10-29">29 Oct 2026</time></summary>
+          <ul>
+            <li data-i18n="changelog.1130.1">The altitude in the status panel is live also while no recording is running: it follows the fixes the map receives and stays empty only until the GPS reports an altitude.</li>
+            <li data-i18n="changelog.1130.2">A new follow button on the map: one tap centres on your position and keeps the map on you while you walk. A second tap, or simply dragging the map, gives you the camera back.</li>
+            <li data-i18n="changelog.1130.3">The map no longer jumps back to your position a few seconds after you pan away: it moves only on the launch, when you ask for it or while follow is on.</li>
+            <li data-i18n="changelog.1130.4">The bar under the map always shows the coordinates of the latest fix, updated as you move, together with the state of the GPS signal.</li>
+            <li data-i18n="changelog.1130.5">Map colors now uses a round color wheel with a brightness slider: pick the hue and the saturation on the circle instead of moving three RGB sliders.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.12.0</strong> · <span data-i18n="changelog.1120.title">Map colors</span> <time datetime="2026-10-28">28 Oct 2026</time></summary>
           <ul>
             <li data-i18n="changelog.1120.1">The side menu has Map colors: pick the background, the road color and the trail color, each with a live preview and its hex value.</li>
