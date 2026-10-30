@@ -77,7 +77,7 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.16.1</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.17.0</dd></div>
           <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">30 Oct 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>7 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
@@ -86,7 +86,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.16.1.apk" data-i18n="hiking.download">Download HikingLife 1.16.1</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.17.0.apk" data-i18n="hiking.download">Download HikingLife 1.17.0</a>
           <span class="app-file">HikingLife.apk · signed release · 7 MB</span>
         </div>
 
@@ -94,22 +94,24 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.16.1 (7 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.17.0 (7 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
           <!-- release:start -->
-          <summary data-i18n="release.summary">What's new in 1.16.1</summary>
+          <summary data-i18n="release.summary">What's new in 1.17.0</summary>
           <ul>
-            <li data-i18n="release.1">The menu arrow, the home button, the waypoint button and the compass button are one group, evenly spaced: a column under the menu arrow when the phone is upright, a row beside it in landscape.</li>
-            <li data-i18n="release.2">The home button no longer touches the menu arrow, and the buttons keep the same gap when one is added or the screen changes.</li>
+            <li data-i18n="release.1">**The height is the ground under you.** A published map carries an elevation file of a few megabytes, and the Maps menu downloads it together with the map: the status panel and the recorder read the altitude from it — interpolated on a grid of samples about 90 m apart, built from the Copernicus DEM at 30 m — instead of the GPS altitude, which drifts by tens of metres.</li>
+            <li data-i18n="release.2">**The maps already on the phone get it too.** A map downloaded before the terrain existed now shows *Elevation* in the Maps menu and fetches the file the next time it is selected; deleting the map deletes its elevation as well.</li>
+            <li data-i18n="release.3">**Outside a map nothing changes.** When the selected map has no elevation, or the position is outside its area, the app keeps the GPS altitude corrected with the EGM96 geoid.</li>
+            <li data-i18n="release.4">All twenty Italian regions are published with their terrain, so a downloaded map shows the height from the first fix.</li>
           </ul>
           <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">4a3bea0a09e86e04198c98b14daf252c49812a76060df3f195cfec9ef35573e4</code>
+          SHA-256: <code id="apk-sha256">12df66196e239c0d9ac678eb7c6d06591bcc5b45c6c1da1c89e91dc80db467e9</code>
         </p>
       </article>
 
@@ -241,6 +243,15 @@
       <div class="changelog">
         <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.17.0</strong> · <span data-i18n="changelog.1170.title">The map knows how high the ground is</span> <time datetime="2026-10-30">30 Oct 2026</time></summary>
+          <ul>
+            <li data-i18n="changelog.1170.1">**The height is the ground under you.** A published map carries an elevation file of a few megabytes, and the Maps menu downloads it together with the map: the status panel and the recorder read the altitude from it — interpolated on a grid of samples about 90 m apart, built from the Copernicus DEM at 30 m — instead of the GPS altitude, which drifts by tens of metres.</li>
+            <li data-i18n="changelog.1170.2">**The maps already on the phone get it too.** A map downloaded before the terrain existed now shows *Elevation* in the Maps menu and fetches the file the next time it is selected; deleting the map deletes its elevation as well.</li>
+            <li data-i18n="changelog.1170.3">**Outside a map nothing changes.** When the selected map has no elevation, or the position is outside its area, the app keeps the GPS altitude corrected with the EGM96 geoid.</li>
+            <li data-i18n="changelog.1170.4">All twenty Italian regions are published with their terrain, so a downloaded map shows the height from the first fix.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.16.1</strong> · <span data-i18n="changelog.1161.title">Straight buttons</span> <time datetime="2026-10-30">30 Oct 2026</time></summary>
           <ul>
             <li data-i18n="changelog.1161.1">The menu arrow, the home button, the waypoint button and the compass button are one group, evenly spaced: a column under the menu arrow when the phone is upright, a row beside it in landscape.</li>
