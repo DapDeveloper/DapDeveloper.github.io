@@ -76,7 +76,7 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.15.0</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.16.0</dd></div>
           <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">30 Oct 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>7 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
@@ -85,7 +85,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.15.0.apk" data-i18n="hiking.download">Download HikingLife 1.15.0</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.16.0.apk" data-i18n="hiking.download">Download HikingLife 1.16.0</a>
           <span class="app-file">HikingLife.apk · signed release · 7 MB</span>
         </div>
 
@@ -93,27 +93,26 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.15.0 (7 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.16.0 (7 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
           <!-- release:start -->
-          <summary data-i18n="release.summary">What's new in 1.15.0</summary>
+          <summary data-i18n="release.summary">What's new in 1.16.0</summary>
           <ul>
-            <li data-i18n="release.1">The house button saves the place where you stand as home. The house stays on the map, so you always see where the walk started, and pressing the button again moves it.</li>
-            <li data-i18n="release.2">**Return to home** in the menu starts the navigation to the home point, on the trails when they reach it and in a straight line when they do not, with the distance and the time in the panel.</li>
-            <li data-i18n="release.3">A long press on the house button, or a tap on the house on the map, does the same.</li>
-            <li data-i18n="release.4">The pin button asks for a nickname and saves a waypoint, which appears on the map as a blue pin.</li>
-            <li data-i18n="release.5">**Waypoints** in the menu lists the saved places with the distance from where you are: tap one to navigate to it, and delete the ones you no longer need.</li>
-            <li data-i18n="release.6">Home and waypoints stay on the phone and are there after a restart or an update.</li>
-            <li data-i18n="release.7">Stopping a recording now offers **Discard** as well as Save and Cancel, so a walk can be thrown away without keeping a file.</li>
+            <li data-i18n="release.1">**Import a GPX track and follow it.** *Import GPX* in the menu opens the files of the phone: the track appears as a green line on the map and the app guides you along it from the nearest point. The panel carries the file name, the remaining distance and time and the next manoeuvre, and leaving the track only warns you — the file is the route, not a suggestion — until its end closes the walk.</li>
+            <li data-i18n="release.2">**Export and share a recording as GPX.** Every saved recording has an actions button: *Export as GPX file* writes a standard GPX 1.1 file through the system save dialog, and *Share as GPX…* sends it to Telegram, e-mail, WhatsApp or any other app. No storage permission is asked for.</li>
+            <li data-i18n="release.3">**Exit** at the end of the menu closes the app and removes it from the recent apps, stopping the recording service too. If a walk is still recording it asks first: *Save* keeps it, *Discard* throws the points away, *Cancel* goes back to the map.</li>
+            <li data-i18n="release.4">**A compass button that turns the map.** By default the map keeps the direction of travel at the top, turning with the course of the walk so the path you follow stays upright; a phone lying still never turns it, and the map stays north up until a course is known. One tap makes the map turn with the phone instead, like a paper map in the hand: point the phone north and north is at the top.</li>
+            <li data-i18n="release.5">**The position is drawn as an arrow**, not a dot: it shows where the phone points — or the GPS course on a phone without a compass — and turns with the map, so heading and map always read together.</li>
+            <li data-i18n="release.6">The two-finger map rotation is gone: the button decides which way the map points.</li>
           </ul>
           <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">73044a4f2b1be907fece2766753a1e79acb3da2716a07005f2864e647da9d674</code>
+          SHA-256: <code id="apk-sha256">435a32f26b5b87cbe020938a3e343c4ae3b228d44fcf9b85ef827ccf4d9f74e5</code>
         </p>
       </article>
 
@@ -245,6 +244,17 @@
       <div class="changelog">
         <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.16.0</strong> · <span data-i18n="changelog.1160.title">Follow a GPX track, leave the app, and a map that turns</span> <time datetime="2026-10-30">30 Oct 2026</time></summary>
+          <ul>
+            <li data-i18n="changelog.1160.1">**Import a GPX track and follow it.** *Import GPX* in the menu opens the files of the phone: the track appears as a green line on the map and the app guides you along it from the nearest point. The panel carries the file name, the remaining distance and time and the next manoeuvre, and leaving the track only warns you — the file is the route, not a suggestion — until its end closes the walk.</li>
+            <li data-i18n="changelog.1160.2">**Export and share a recording as GPX.** Every saved recording has an actions button: *Export as GPX file* writes a standard GPX 1.1 file through the system save dialog, and *Share as GPX…* sends it to Telegram, e-mail, WhatsApp or any other app. No storage permission is asked for.</li>
+            <li data-i18n="changelog.1160.3">**Exit** at the end of the menu closes the app and removes it from the recent apps, stopping the recording service too. If a walk is still recording it asks first: *Save* keeps it, *Discard* throws the points away, *Cancel* goes back to the map.</li>
+            <li data-i18n="changelog.1160.4">**A compass button that turns the map.** By default the map keeps the direction of travel at the top, turning with the course of the walk so the path you follow stays upright; a phone lying still never turns it, and the map stays north up until a course is known. One tap makes the map turn with the phone instead, like a paper map in the hand: point the phone north and north is at the top.</li>
+            <li data-i18n="changelog.1160.5">**The position is drawn as an arrow**, not a dot: it shows where the phone points — or the GPS course on a phone without a compass — and turns with the map, so heading and map always read together.</li>
+            <li data-i18n="changelog.1160.6">The two-finger map rotation is gone: the button decides which way the map points.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.15.0</strong> · <span data-i18n="changelog.1150.title">The home point and the waypoints</span> <time datetime="2026-10-30">30 Oct 2026</time></summary>
           <ul>
             <li data-i18n="changelog.1150.1">The house button saves the place where you stand as home. The house stays on the map, so you always see where the walk started, and pressing the button again moves it.</li>
