@@ -77,8 +77,8 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.22.1</dd></div>
-          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">2 Nov 2026</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.23.0</dd></div>
+          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">3 Nov 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>7 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
           <div><dt data-i18n="detail.build">Build</dt><dd data-i18n="detail.build.value">Signed release APK</dd></div>
@@ -86,7 +86,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.22.1.apk" data-i18n="hiking.download">Download HikingLife 1.22.1</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.23.0.apk" data-i18n="hiking.download">Download HikingLife 1.23.0</a>
           <span class="app-file">HikingLife.apk · signed release · 7 MB</span>
         </div>
 
@@ -94,21 +94,25 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.22.1 (7 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.23.0 (7 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
           <!-- release:start -->
-          <summary data-i18n="release.summary">What's new in 1.22.1</summary>
+          <summary data-i18n="release.summary">What's new in 1.23.0</summary>
           <ul>
-            <li data-i18n="release.1">**The PDF has a folder of its own.** Preparing a summary PDF used to clear the folder that holds the summary PNG, so a picture you had just shared could disappear before the other app finished reading it. Each export now keeps its own place and both stay available.</li>
+            <li data-i18n="release.1">**3D terrain view.** The cube button on the right of the map lays the terrain of the selected map over the flat one: ridges, valleys and lakes laid flat at the level of their own water, measured from the elevation file that comes with the map. One finger walks over the land, two fingers turn around a valley, lift the eye to the horizon or bring the peaks closer. It works fully offline; a map whose elevation file is not downloaded says so and stays flat.</li>
+            <li data-i18n="release.2">**Your position in the landscape.** A red pin marks where you stand on the terrain itself, on the slope the ground really has. It moves with every GPS fix and with every window of land the view walks into, and when a ridge in front of the eye hides it, the pin shows faint through the rock instead of disappearing. The position button flies the view to where you are.</li>
+            <li data-i18n="release.3">**The map pans and zooms without freezing.** Dragging the map or stepping the zoom used to hang for a fraction of a second every few frames, and a zoom step could leave the screen empty for seconds. On a phone with the Trentino map, a pan went from 71% of frames late to 6%, and a zoom step is drawn within half a second.</li>
+            <li data-i18n="release.4">**Place names stay readable.** Labels no longer pile up on top of each other after a fast pan; each point is measured again for the frame that shows it.</li>
+            <li data-i18n="release.5">**A recording opens when you tap its row.** In the saved-recordings list only the small icon at the end of a row reacted; tapping the name or the numbers of a recording did nothing at all. The whole row is the button now.</li>
           </ul>
           <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">afbf34159f38e6e32a1da78536561ca2f974e1bf3f98a9d9c6f13b5dc4366625</code>
+          SHA-256: <code id="apk-sha256">9e769d1a5bf3498b8431fb160b99964d9a26dc7ad8c2e98174da656d6d4cc062</code>
         </p>
       </article>
 
@@ -240,6 +244,16 @@
       <div class="changelog">
         <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.23.0</strong> · <span data-i18n="changelog.1230.title">See the mountains in 3D</span> <time datetime="2026-11-03">3 Nov 2026</time></summary>
+          <ul>
+            <li data-i18n="changelog.1230.1">**3D terrain view.** The cube button on the right of the map lays the terrain of the selected map over the flat one: ridges, valleys and lakes laid flat at the level of their own water, measured from the elevation file that comes with the map. One finger walks over the land, two fingers turn around a valley, lift the eye to the horizon or bring the peaks closer. It works fully offline; a map whose elevation file is not downloaded says so and stays flat.</li>
+            <li data-i18n="changelog.1230.2">**Your position in the landscape.** A red pin marks where you stand on the terrain itself, on the slope the ground really has. It moves with every GPS fix and with every window of land the view walks into, and when a ridge in front of the eye hides it, the pin shows faint through the rock instead of disappearing. The position button flies the view to where you are.</li>
+            <li data-i18n="changelog.1230.3">**The map pans and zooms without freezing.** Dragging the map or stepping the zoom used to hang for a fraction of a second every few frames, and a zoom step could leave the screen empty for seconds. On a phone with the Trentino map, a pan went from 71% of frames late to 6%, and a zoom step is drawn within half a second.</li>
+            <li data-i18n="changelog.1230.4">**Place names stay readable.** Labels no longer pile up on top of each other after a fast pan; each point is measured again for the frame that shows it.</li>
+            <li data-i18n="changelog.1230.5">**A recording opens when you tap its row.** In the saved-recordings list only the small icon at the end of a row reacted; tapping the name or the numbers of a recording did nothing at all. The whole row is the button now.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.22.1</strong> · <span data-i18n="changelog.1221.title">Shared files no longer overwrite each other</span> <time datetime="2026-11-02">2 Nov 2026</time></summary>
           <ul>
             <li data-i18n="changelog.1221.1">**The PDF has a folder of its own.** Preparing a summary PDF used to clear the folder that holds the summary PNG, so a picture you had just shared could disappear before the other app finished reading it. Each export now keeps its own place and both stay available.</li>
