@@ -77,8 +77,8 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.22.0</dd></div>
-          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">31 Oct 2026</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.22.1</dd></div>
+          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">2 Nov 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>7 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
           <div><dt data-i18n="detail.build">Build</dt><dd data-i18n="detail.build.value">Signed release APK</dd></div>
@@ -86,7 +86,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.22.0.apk" data-i18n="hiking.download">Download HikingLife 1.22.0</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.22.1.apk" data-i18n="hiking.download">Download HikingLife 1.22.1</a>
           <span class="app-file">HikingLife.apk · signed release · 7 MB</span>
         </div>
 
@@ -94,23 +94,21 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.22.0 (7 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.22.1 (7 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
           <!-- release:start -->
-          <summary data-i18n="release.summary">What's new in 1.22.0</summary>
+          <summary data-i18n="release.summary">What's new in 1.22.1</summary>
           <ul>
-            <li data-i18n="release.1">**Altitude meter button.** The mountain button at the bottom left of the map turns it on: while it is lit, every tap on the map shows the height of that point in the panel at the bottom, with the point pinned where you tapped it and its coordinates underneath.</li>
-            <li data-i18n="release.2">**Terrain, not GPS.** The height comes from the elevation file of the selected map — the same data behind the altitude readout of the app — so it stays steady where the GPS altitude drifts. Every region published with its map carries one.</li>
-            <li data-i18n="release.3">**Honest answers.** A map whose terrain is not installed yet says so, and a point outside the mapped area is reported as outside the elevation data instead of a made-up number.</li>
+            <li data-i18n="release.1">**The PDF has a folder of its own.** Preparing a summary PDF used to clear the folder that holds the summary PNG, so a picture you had just shared could disappear before the other app finished reading it. Each export now keeps its own place and both stay available.</li>
           </ul>
           <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">a58d27fcfcb9ccca8fdd234d06ddbf42af9ac3c78d646310165ab0f7c519ff45</code>
+          SHA-256: <code id="apk-sha256">afbf34159f38e6e32a1da78536561ca2f974e1bf3f98a9d9c6f13b5dc4366625</code>
         </p>
       </article>
 
@@ -242,6 +240,12 @@
       <div class="changelog">
         <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.22.1</strong> · <span data-i18n="changelog.1221.title">Shared files no longer overwrite each other</span> <time datetime="2026-11-02">2 Nov 2026</time></summary>
+          <ul>
+            <li data-i18n="changelog.1221.1">**The PDF has a folder of its own.** Preparing a summary PDF used to clear the folder that holds the summary PNG, so a picture you had just shared could disappear before the other app finished reading it. Each export now keeps its own place and both stay available.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.22.0</strong> · <span data-i18n="changelog.1220.title">Read the altitude of any point</span> <time datetime="2026-10-31">31 Oct 2026</time></summary>
           <ul>
             <li data-i18n="changelog.1220.1">**Altitude meter button.** The mountain button at the bottom left of the map turns it on: while it is lit, every tap on the map shows the height of that point in the panel at the bottom, with the point pinned where you tapped it and its coordinates underneath.</li>
