@@ -77,7 +77,7 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.24.0</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.25.0</dd></div>
           <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">3 Nov 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>7 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
@@ -86,7 +86,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.24.0.apk" data-i18n="hiking.download">Download HikingLife 1.24.0</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.25.0.apk" data-i18n="hiking.download">Download HikingLife 1.25.0</a>
           <span class="app-file">HikingLife.apk · signed release · 7 MB</span>
         </div>
 
@@ -94,23 +94,23 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.24.0 (7 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.25.0 (7 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
           <!-- release:start -->
-          <summary data-i18n="release.summary">What's new in 1.24.0</summary>
+          <summary data-i18n="release.summary">What's new in 1.25.0</summary>
           <ul>
-            <li data-i18n="release.1" data-i18n-html><strong>The 3D land reads as depth.</strong> In the 3D view a valley behind a ridge used to look as flat as the ridge itself, and the whole country came out as a grey blur in which it was impossible to tell front from behind. Now a slope lays its shadow on the ground behind it, the way the afternoon sun really does: a hollow sits in shade, the far side of a crest is visibly the far side, a slope facing the sun is bright and one facing away keeps its own colour darkened, and the ranges further away pale into the air so the near crest stands in front of them instead of everything being painted at the same strength.</li>
-            <li data-i18n="release.2" data-i18n-html><strong>Close to the rock you see the rock.</strong> Bringing the eye down to the ground now measures a smaller window of land, so up near the terrain shows the crags, the couloirs and the glacier, and not a smooth fog.</li>
-            <li data-i18n="release.3" data-i18n-html><strong>The 3D view walks without waiting.</strong> A new window of land used to take over two hundred milliseconds on a phone, so the land arrived a beat after the finger left it. Now it takes about a hundred, the first window after opening the view included. Nothing about the picture changed: the work was cut rather than traded away.</li>
+            <li data-i18n="release.1" data-i18n-html><strong>The elevation meter.</strong> The button with the rising arrow, just above the altitude meter, turns it on: from then on every tap on the map answers with, for example, 312 m above you, with your own height and the height of the point written under it and the point pinned where you tapped. A second tap moves the pin, the gap and both heights to the new point.</li>
+            <li data-i18n="release.2" data-i18n-html><strong>Both heights from the same ground.</strong> Your height is read from the elevation file of the map, at the place you are standing, and not from the altitude of the GPS fix: Android measures that one from the reference ellipsoid, some forty metres from the sea level the maps are measured from in Italy, so mixing the two would put a silent offset into every answer. The gap the panel shows is the climbing that is really there.</li>
+            <li data-i18n="release.3" data-i18n-html><strong>It says when it has no answer.</strong> A map with no elevation file, a position not known yet, or a point outside the terrain the file covers each get their own message instead of a number.</li>
           </ul>
           <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">40d4bb56354f3cad4d83d0c784c697d45cfd35bea8a128aa474f1ca894aef382</code>
+          SHA-256: <code id="apk-sha256">db37f3a0024232cb8694d4735d13d03a61fedd501c4e514f226b3e6f0ae7da0d</code>
         </p>
       </article>
 
@@ -242,6 +242,14 @@
       <div class="changelog">
         <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.25.0</strong> · <span data-i18n="changelog.1250.title">Know the climb to the point you tap</span> <time datetime="2026-11-03">3 Nov 2026</time></summary>
+          <ul>
+            <li data-i18n="changelog.1250.1" data-i18n-html><strong>The elevation meter.</strong> The button with the rising arrow, just above the altitude meter, turns it on: from then on every tap on the map answers with, for example, 312 m above you, with your own height and the height of the point written under it and the point pinned where you tapped. A second tap moves the pin, the gap and both heights to the new point.</li>
+            <li data-i18n="changelog.1250.2" data-i18n-html><strong>Both heights from the same ground.</strong> Your height is read from the elevation file of the map, at the place you are standing, and not from the altitude of the GPS fix: Android measures that one from the reference ellipsoid, some forty metres from the sea level the maps are measured from in Italy, so mixing the two would put a silent offset into every answer. The gap the panel shows is the climbing that is really there.</li>
+            <li data-i18n="changelog.1250.3" data-i18n-html><strong>It says when it has no answer.</strong> A map with no elevation file, a position not known yet, or a point outside the terrain the file covers each get their own message instead of a number.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.24.0</strong> · <span data-i18n="changelog.1240.title">The land shows its depth</span> <time datetime="2026-11-03">3 Nov 2026</time></summary>
           <ul>
             <li data-i18n="changelog.1240.1" data-i18n-html><strong>The 3D land reads as depth.</strong> In the 3D view a valley behind a ridge used to look as flat as the ridge itself, and the whole country came out as a grey blur in which it was impossible to tell front from behind. Now a slope lays its shadow on the ground behind it, the way the afternoon sun really does: a hollow sits in shade, the far side of a crest is visibly the far side, a slope facing the sun is bright and one facing away keeps its own colour darkened, and the ranges further away pale into the air so the near crest stands in front of them instead of everything being painted at the same strength.</li>
