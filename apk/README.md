@@ -4,9 +4,9 @@ APK files in this folder are served directly by GitHub Pages.
 
 ## Current
 
-- `HikingLife.apk` — HikingLife v1.30.0, signed release (Android 8.0+, ~7 MB)
-  - SHA-256: `0143385fc359c3a0ec56485c6ed9a2bc1ca2622accdf6e1a1b962b87c52e1a72`
-  - Source asset: HikingLife release `v1.30.0` / `HikingLife-1.30.0.apk`
+- `HikingLife.apk` — HikingLife v1.31.0, signed release (Android 8.0+, ~7 MB)
+  - SHA-256: `61fb7274075d5b09005cbf5f2b8abd79c368d99793817e07e6e91888dea300c7`
+  - Source asset: HikingLife release `v1.31.0` / `HikingLife-1.31.0.apk`
   - Signing certificate: `CN=HikingLife Release, O=DapDeveloper, C=IT`
   - Certificate SHA-256: `C7:D0:B3:C3:CE:06:6A:D3:56:6B:5C:62:D2:27:DA:92:9A:D2:3B:57:A2:85:2B:7B:2D:07:8D:4D:FC:96:77:01`
   - This stable filename is replaced on each release, so the QR code and
