@@ -77,8 +77,8 @@
         </ul>
 
         <dl class="app-details">
-          <div><dt data-i18n="detail.version">Version</dt><dd>1.39.0</dd></div>
-          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">25 Nov 2026</dd></div>
+          <div><dt data-i18n="detail.version">Version</dt><dd>1.39.1</dd></div>
+          <div><dt data-i18n="detail.released">Released</dt><dd data-i18n="detail.released.value">26 Nov 2026</dd></div>
           <div><dt data-i18n="detail.size">Size</dt><dd>8 MB</dd></div>
           <div><dt data-i18n="detail.requires">Requires</dt><dd>Android 8.0+</dd></div>
           <div><dt data-i18n="detail.build">Build</dt><dd data-i18n="detail.build.value">Signed release APK</dd></div>
@@ -86,7 +86,7 @@
         </dl>
 
         <div class="app-actions">
-          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.39.0.apk" data-i18n="hiking.download">Download HikingLife 1.39.0</a>
+          <a class="btn btn-primary" href="apk/HikingLife.apk" download="HikingLife-1.39.1.apk" data-i18n="hiking.download">Download HikingLife 1.39.1</a>
           <span class="app-file">HikingLife.apk · signed release · 8 MB</span>
         </div>
 
@@ -94,22 +94,21 @@
           <img class="qr-code" src="assets/hikinglife-qr.png" alt="QR code to download HikingLife" width="144" height="144" data-i18n="qr.alt" data-i18n-attr="alt">
           <div>
             <p class="qr-title" data-i18n="qr.title">Scan to install</p>
-            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.39.0 (8 MB).</p>
+            <p class="qr-caption" data-i18n="qr.caption">Point your phone camera at the code to download HikingLife 1.39.1 (8 MB).</p>
           </div>
         </div>
 
         <details class="release-notes">
           <!-- release:start -->
-          <summary data-i18n="release.summary">What's new in 1.39.0</summary>
+          <summary data-i18n="release.summary">What's new in 1.39.1</summary>
           <ul>
-            <li data-i18n="release.1" data-i18n-html><strong>Seven markers for your position.</strong> Settings now offers Arrow, Round arrow, Pin, Target, Diamond, Compass star and Crosshair; the choice applies at once, the pin stands on the fix by its tip, and it survives a relaunch.</li>
-            <li data-i18n="release.2" data-i18n-html><strong>The offline map in the car.</strong> HikingLife can run as an Android Auto navigation app: the enabled maps, the position, a search over the named places and a trail route with the next manoeuvre, distance and arrival, all offline. It is a side-loaded developer-mode build, not tested on a car yet.</li>
+            <li data-i18n="release.1" data-i18n-html><strong>Android Auto opens again.</strong> The car app declared its minimum car API level in the wrong place, so Android Auto refused to bind it; it is now declared where the Car App Library reads it. The car template and its offline search were checked on the Desktop Head Unit.</li>
           </ul>
           <!-- release:end -->
         </details>
 
         <p class="checksum">
-          SHA-256: <code id="apk-sha256">d1480dfa1a6fd5fd08140d486ee3bd32926b4677e584c1fb84e7d589dc673c48</code>
+          SHA-256: <code id="apk-sha256">959390a6e4876c87c90cf2391e7de6c649dd5eacbc9960dc29b3fcbfa763624c</code>
         </p>
       </article>
 
@@ -241,6 +240,12 @@
       <div class="changelog">
         <!-- changelog:start -->
         <details class="changelog-item" open>
+          <summary><strong>1.39.1</strong> · <span data-i18n="changelog.1391.title">The car screen opens</span> <time datetime="2026-11-26">26 Nov 2026</time></summary>
+          <ul>
+            <li data-i18n="changelog.1391.1" data-i18n-html><strong>Android Auto opens again.</strong> The car app declared its minimum car API level in the wrong place, so Android Auto refused to bind it; it is now declared where the Car App Library reads it. The car template and its offline search were checked on the Desktop Head Unit.</li>
+          </ul>
+        </details>
+        <details class="changelog-item">
           <summary><strong>1.39.0</strong> · <span data-i18n="changelog.1390.title">Your own symbol, and the map in the car</span> <time datetime="2026-11-25">25 Nov 2026</time></summary>
           <ul>
             <li data-i18n="changelog.1390.1" data-i18n-html><strong>Seven markers for your position.</strong> Settings now offers Arrow, Round arrow, Pin, Target, Diamond, Compass star and Crosshair; the choice applies at once, the pin stands on the fix by its tip, and it survives a relaunch.</li>
